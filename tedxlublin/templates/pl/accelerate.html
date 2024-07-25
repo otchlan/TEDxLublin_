@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="pl">
+
+<head>
+    <meta charset="utf-8">
+{% load static %}
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'img/favicon.png' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TEDxLublin 2024: ACCELERATE</title>
+    <link rel="canonical" href="https://www.tedxlublin.org/templates/pl/accelerate.html">
+    <meta property="og:url" content="https://www.tedxlublin.org/templates/pl/accelerate.html">
+    <meta name="" content="">
+    <meta name="description" content="Dołącz do nas na TEDxLublin 2024, gdzie motywem przewodnim jest &quot;ACCELERATE&quot;. Odkryj, jak przyspieszać zmiany w technologii, społeczeństwie i środowisku. Inspirujące wystąpienia, wizjonerscy mówcy i unikalne doświadczenia czekają na Ciebie 7 września w Lublinie. Zarezerwuj swoje miejsce już dziś!">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/Helvetica.css">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../../assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../../assets/css/animation.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../assets/css/footer-pl.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../assets/css/lang-selector.css">
+    <link rel="stylesheet" href="../../assets/css/navbar-en.css">
+    <link rel="stylesheet" href="../../assets/css/navbar-overlay.css">
+    <link rel="stylesheet" href="../../assets/css/partners-en.css">
+    <link rel="stylesheet" href="../../assets/css/partners.compiled.css">
+    <link rel="stylesheet" href="../../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body><div>
+    <div class="bg"></div>
+    <div class="bg bg-reverse"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg-reverse bg2"></div>
+    <div class="w-100 h-100 dimmer"></div>
+</div>
+    <div class="overlay"></div>
+    <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
+        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="../../assets/img/logo-black.png"></a>
+            <div class="collapse navbar-collapse" style="font-weight:bold;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                    <li class="nav-item"><a class="nav-link rounded" id="tickets-btn-1" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <div class="dismiss"><i class="fas fa-caret-left"></i></div>
+                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="index.html"><img src="../../assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <nav class="navbar navbar-expand navbar-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav flex-column me-auto">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
+        </div>
+    </nav>
+    <section class="py-4 py-xl-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col"><img id="baner-image" width="100" height="80"></div>
+            </div>
+            <div class="border rounded border-0 border-dark overflow-hidden"></div>
+        </div>
+    </section>
+    <section class="bg-light shadow-lg py-3">
+        <div class="container py-4 py-xl-5">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                <div class="col">
+                    <div class="d-flex">
+                        <div class="px-3"><img class="pb-3" src="../../assets/img/logo-black-accelerate.png" style="width: 100%;">
+                            <p>Dołącz do nas podczas tegorocznej edycji, nie może cie zabraknąć!</p><a href="{% url 'about' lang='pl' %}">Dowiedz się więcej o TED&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <div class="px-3">
+                            <p>TEDxLublin to niezależnie organizowane wydarzenie na licencji TED, które łączy w sobie ducha globalnej organizacji TED z lokalnym kontekstem i energią Lublina. Nasza misja to rozpowszechnianie wartościowych idei, inspirowanie do działania i tworzenie platformy dla innowacyjnych myśli, które wesprą naszą społeczność oraz otworzą przed nią nowe możliwości.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-12">
+                    <div class="d-flex">
+                        <div class="px-3">
+                            <p>Poprzez nasze eventy, warsztaty i inicjatywy społeczne, dążymy do stymulowania dialogu, promowania kreatywnego myślenia i zachęcania do aktywnego udziału w kształtowaniu lepszej przyszłości dla Lublina i jego mieszkańców.</p>
+                            <p>Dołącz do nas w tej ekscytującej podróży odkrywania i szerzenia idei, które mają moc zmieniania świata - zaczynając od naszej lokalnej społeczności!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light shadow-lg py-3">
+        <div class="container">
+            <div class="row px-3 pt-3">
+                <div class="col">
+                    <h2 class="fw-bold">INFORMACJE</h2>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-6">
+                    <div class="px-3">
+                        <p>TEDxLublin zaprasza 7 września 2024 roku na wyjątkowe wydarzenie pod hasłem "ACCELERATE"! W pięknych wnętrzach Teatru Starego w Lublinie, 10 inspirujących prelegentów podzieli się swoimi wizjami i doświadczeniami, które przyspieszają bieg świata.<br><br>Wspólnie zastanowimy się nad tempem zmian we współczesnym świecie. Czy musimy nieustannie przyspieszać? Jak odnaleźć równowagę między postępem a jakością życia? Czy szybszy zawsze znaczy lepszy? Jak przyspieszyć pozytywne zmiany w naszym otoczeniu?<br><br>Wydarzenie poprowadzą dla Was charyzmatyczni Marzena Sierociuch-Pierzyna oraz Przemysław Wójcik.<br>Przyspieszcie z nami ku lepszej przyszłości na TEDxLublin 2024!<br><br></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center px-3">
+                                <h4>START SPRZEDAŻY BILETÓW EARLY BIRDS ZA</h4>
+                                <div class="row text-black row-cols-5" id="countdown-1">
+                                    <div class="col">
+                                        <h2 id="months" class="timer-value">00</h2>
+                                        <div class="countdown-label"><span>Miesięcy</span></div>
+                                    </div>
+                                    <div class="col">
+                                        <h2 id="days" class="timer-value">00</h2>
+                                        <div class="countdown-label"><span>Dni</span></div>
+                                    </div>
+                                    <div class="col">
+                                        <h2 id="hours" class="timer-value">00</h2>
+                                        <div class="countdown-label"><span>Godzin</span></div>
+                                    </div>
+                                    <div class="col">
+                                        <h2 id="minutes" class="timer-value">00</h2>
+                                        <div class="countdown-label"><span>Minut</span></div>
+                                    </div>
+                                    <div class="col">
+                                        <h2 id="seconds" class="timer-value">00</h2>
+                                        <div class="countdown-label"><span>Sekund</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 g-1 row-cols-lg-1 pt-3">
+                        <div class="col">
+                            <div class="d-flex align-items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-calendar4 mx-1 p-2" style="font-size: 33px;">
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"></path>
+                                    </svg></span><span>DATA: 7 września 2024</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-map mx-1 p-2" style="font-size: 2rem;">
+                                        <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"></path>
+                                    </svg></span><span>LOCATION: Teatr stary, ul. Jezuicka 18, Lublin</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-ticket-perferated mx-1 p-2" style="font-size: 2rem;">
+                                        <path fill-rule="evenodd" d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Zm3 .35v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"></path>
+                                    </svg></span><span>BILETY: ekobilet.pl</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard2-check mx-1 p-2" style="font-size: 2rem;">
+                                        <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"></path>
+                                        <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"></path>
+                                        <path d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3Z"></path>
+                                    </svg></span><span>REJESTRACJA: godzina 13:00</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock mx-1 p-2" style="font-size: 2rem;">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"></path>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"></path>
+                                    </svg></span><span>ROZPOCZĘCIE: godzina 13:30</span></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock-history mx-1 p-2" style="font-size: 2rem;">
+                                        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483m.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535m-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"></path>
+                                        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"></path>
+                                    </svg></span><span>ZAKOŃCZENIE: godzina 19:40</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto w-50 py-2 border-dark-subtle">
+        <div class="container">
+            <div class="row gy-4 gy-md-0 py-3">
+                <div class="col">
+                    <div class="w-100 px-3">
+                        <h2 class="fw-bold">LOKALIZACJA</h2>
+                        <p class="text-nowrap">Konferencja odbędzie się w Teatrze Starym w Lublinie</p>
+                        <p class="fw-bold">Jezuicka st. 18, 20-113 Lublin</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314.7033222259488!2d22.56740215192245!3d51.244613292339814!2m3!1f23.127906976744235!2f48.899182343415674!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x4722576a89bb9c2b%3A0xb8ec09b3fe0026a1!2sTeatr%20Stary%20w%20Lublinie!5e1!3m2!1spl!2spl!4v1720348811500!5m2!1spl!2spl" style="border:0;width:100%;height:450px;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto w-50 py-2 border-dark-subtle">
+    </section>
+    <section class="bg-light py-3">
+        <div class="container">
+            <div class="row px-3">
+                <div class="col col-12">
+                    <div class="w-100">
+                        <h2 class="fw-bold">PRELEGENCI</h2>
+                        <p>Podczas konferencji wystąpi 10 prelegentów</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="ACCELERATE (1).png" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Karolina Anna Janik</h3>
+                    <p class="card-text speaker-title mb-2">Psycholog biznesu / Trener personalny</p>
+                    <p class="card-text speaker-bio mb-3">Tysiące godzin spędzonych na sali szkoleniowej, setki sesji indywidualnych zorientowanych na wsparcie psychologiczne, trening inteligencji emocjonalnej i rozwój kompetencji interpersonalnych, managerskich i miękkich składa się na jej doświadczenie. Współpracowała z firmami z sektora produkcyjnego, finansowego czy farmaceutycznego. W ramach swojej firmy świadczy usługi szkoleniowe dla firm oraz klientów indywidualnych. W swojej pracy koncentruje się na integracji świata nauki i biznesu poprzez stosowanie podejścia EBP (evidence based practice).&nbsp;<br><br>Jest autorką artykułów w czasopismach naukowych oraz popularnonaukowych między innymi w Charakterach. Jej wypowiedzi można znaleźć w Pulsie Biznesu gdzie udziela wywiadów z obszaru psychologii, ponadto napisała książkę dla dzieci „Oswajamy emocje z Limbisiem”. W 2024 roku obroniła doktorat a przedmiotem jej pracy było badanie eksperymentalne związku radzenia sobie ze stresem z dobrostanem oraz sprawdzenie roli treningu inteligencji emocjonalnej w tej relacji. Jest współautorką programu managerskiego opartego na inteligencji emocjonalnej, oraz polskiego tłumaczenia hiszpańskiego treningu inteligencji emocjonalnej.</p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="ACCELERATE.png" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Andrzej Horoch</h3>
+                    <p class="card-text speaker-title mb-2">Przedsiębiorca / Specjalista technologii immersyjnych</p>
+                    <p class="card-text speaker-bio mb-3"><span style="color: black;">Współwłaściciel firmy Connected Realities na co dzień projektuje i wdraża innowacje w dużych organizacjach. Wśród klientów: Orange, Żabka, PZU, PGNIGE, Miele.&nbsp;Jego specjalizacją&nbsp;są&nbsp;immersyjne technologie VR, AR i AI. Współpracuje z Meta (dawniej Facebook). Jest przewodniczącym komitetu ds. metawersum w ramach Związku Cyfrowa Polska. Laureat polskich i międzynarodowych konkursów związanych z technologiami przyszłości oraz prelegent zapraszany na konferencje tematyczne w całej Europie.&nbsp;</span><br><br><span style="color: black;">Autor „Kierunek Metaverse” - pierwszej, polskiej książki o metaverse dla biznesu.</span><br><span style="color: black;">Dzieli się doświadczeniem praktyka i entuzjasty, przekazując rzetelną wiedzę o realizacji projektów od pomysłu aż po skuteczne wdrożenie.Robi to w sposób oryginalny i barwny, o czym bez wątpienia przekonacie się,&nbsp;podczas TEDxLublin.</span><br><br>"Pasja potrafi znakomicie łączyć ludzi i wtedy powstają ekscytujące projekty"</p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="ACCELERATE (3).png" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Piotr Gąsiorowski</h3>
+                    <p class="card-text speaker-title mb-2">CTO</p>
+                    <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0); background-color: transparent;">Od początku kariery pośrednio związany byłem z branżą IT, chociaż ukończyłem Inżynierię Materiałową i jako drugi fakultet Konstrukcje Budowlane. Koniec studiów spędziłem na Uniwersytecie w Leuven w Belgi, gdzie pod okiem „mistrza” tworzyłem projekt bionicznego węzła i mostu. To w niedługim czasie otwarło mi drzwi do pracy w biurze konstrukcyjnym w Finlandii, gdzie uczestniczyłem w projektach niesamowitych konstrukcji. Kolejnym etapem był Kraków, gdzie po roku od ukończenia studiów zostałem dyrektorem biura konstrukcyjnego w zagranicznej firmie. Sprzedaż firmy przez właściciela pchnęła mnie na ścieżkę przedsiębiorcy. Najpierw jako działalność gospodarcza tworzyłem narzędzia do automatyzacji wycen nieruchomości, aby następnie otworzyć spółkę Wide Lane, która od kilkunastu lat dostarcza narzędzia dla Rzeczoznawców Majątkowych. W czasie jej działania spełniałem swoje marzenia. Najpierw przez kilka miesięcy praktykowałem nurkowanie w Tajlandii by stać się Dive Masterem. Potem zostałem Instruktorem Nurkowania MSDT PADI. Prowadziłem centrum nurkowe na Cyprze, skąd przywiozłem najzaszczytniejszy tytuł. Tytuł Taty. Kolejną dużą zmianą była Majorka, gdzie otworzyliśmy wypożyczalnię łodzi Quest Heroes, która w ciągu roku wspięła się do czołówki na Trip Advisor, a po roku spełniłem marzenie, zostałem właścicielem centrum nurkowego w Camp De Mar. Po sprzedaży obu firm&nbsp; i powrocie do Polski otworzyłem startup Aribo, w którym rozwijamy metody nauki, terapii i promocji oparte o immersyjne gry w mieszanej rzeczywistaości. Jestem też konsultantem w międzynarodowych projektach oraz trenerem mentalnym.</span><br><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Wolny czas spędza z rodziną na łonie natury, ze szczególnym zamiłowaniem do świata podwodnego, w którym odnajduje się jako instruktor nurkowania i freediver.</span><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Jak niektórzy twierdzą można go rozpoznać po radiowym głosie.</span></p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="ACCELERATE (2).png" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Daniel Janik</h3>
+                    <p class="card-text speaker-title mb-2">Trener personalny</p>
+                    <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0);">*speaker description*</span></p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="../../assets/img/blank_profile_picture.webp" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Michał Jaroń</h3>
+                    <p class="card-text speaker-title mb-2">Ekspert Sztucznej Inteligencji / Senior Data Scientist</p>
+                    <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0); background-color: transparent;">Ekspert i praktyk AI. Propagator sztucznej inteligencji, czerpiący radość z zastosowania AI w nieoczywistych dziedzinach.&nbsp;</span><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Jako jeden z prekursorów rozwijał data science w polskiej piłce nożnej. Na swoim koncie ma stworzenie i pomyślne wdrożenie systemów AI, z których codziennie korzystają miliony użytkowników. W trakcie pandemii badał, jak strategie lockdownów mogą minimalizować niedogodności społeczne. Demokratyzując dostęp do AI, stworzył autorski program edukacyjny, którym przeszkolił już prawie 500 osób. Wykorzystując pracę sztucznej inteligencji, zorganizował akcję charytatywną.</span><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Głęboko wierzy, że w myśl prawa Clarka - "każda wystarczająco zaawansowana technologia jest nieodróżnialna od magii", AI wykładniczo poprawi jakość naszego życia.</span><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Tym razem wystąpi w roli prelegenta, ale na swoim koncie ma współorganizowanie kilku wydarzeń spod brandu TEDx.</span><br><br><br></p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="../../assets/img/blank_profile_picture.webp" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Igor Janke</h3>
+                    <p class="card-text speaker-title mb-2">Dziennikarz / Publicysta&nbsp;</p>
+                    <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">Autor podcastu i kanały na YT Układ Otwarty, w którym razem ze swoim gośćmi stara się tłumaczyć rzeczywistość wokół nas ponad podziałami politycznymi i ideowymi. Twórca i prezes niezależnego think tanku Instytut Wolności oraz Szkoły Przywództwa Instytutu Wolności, której celem jest tworzenie elit mogących sprawić, że Polska stanie się europejskim liderem i najlepszym miejscem do życia na ziemi. Uważa, że trzeba mieć wielkie marzenia i stawiać sobie najwyższe cele, bo nie rzeczy niemożliwych.</span><br><span style="color: rgb(0, 0, 0); background-color: transparent;">W mediach przeszedł wszystkie stopnie. Od reportera, przez szefa działu do redaktora naczelnego. W przeszłości m.in. redaktor naczelny Polskiej Agencji Prasowej, szef działu politycznego „Rzeczpospolitej”, z-ca redaktora naczelnego „Expressu Wieczornego”.&nbsp;&nbsp;Prowadził audycje radiowe („Poranek Radia TOK FM”)&nbsp;&nbsp;i telewizyjne („Powiększenie”, „Kuchnia Polityczna”, „Minęła dwudziesta” TVP i „Wydarzenia Dnia w TV Puls, „Prawy do Lewego w Polsat News2) . Komentator wielu stacji radiowych i telewizyjnych. Współtwórca pierwszej w Polsce platformy blogowej Salon24.pl. Autor setek tekstów analiz i reportaży. Przeprowadził wiele wywiadów&nbsp;&nbsp;m.in. z prezydentem USA Barackiem Obamą i senatorem Johnem McCain.&nbsp;&nbsp;Przez kilka lat pracował w branży PR. Autor książek&nbsp;&nbsp;„POPiSowa kronika upadku”, „Napastnik. Opowieść o Viktorze Orbanie”, „Twierdza. Solidarność Walcząca – podziemna armia” oraz „Siła Polski. Czy zrobić, by za 20 lat przegonić Niemcy i Francję”.</span><br><br><br></p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="ACCELERATE (4).png" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Robert Pranagal</h3>
+                    <p class="card-text speaker-title mb-2">Tłumacz / Artysta fotograf / Podcaster</p>
+                    <p class="card-text speaker-bio mb-3">Absolwent Politechniki Lubelskiej, od 30 lat zawodowo pracuje jako tłumacz specjalizujący się w nowych technologiach. Z pasji artysta fotograf, zafascynowany wykorzystaniem światła jako tworzywa i fotografiami, które wykraczają poza zwyczajną rejestrację realistycznej oczywistości. Miłośnik eksperymentu fotograficznego oraz technik szlachetnych i alternatywnych. <br><br>Autor i współautor kilkudziesięciu wystaw indywidualnych oraz zbiorowych w kraju i za granicą. Zdobywca medali, wyróżnień i nagród na międzynarodowych salonach fotografii. Członek Związku Polskich Artystów Fotografików i Stowarzyszenia Twórców Fotoklub Rzeczypospolitej Polskiej.<br>Uhonorowany złotą odznaką Wybitnego Artysty nadaną przez Międzynarodową Federację Sztuki fotograficznej (EFIAP/G), medalem 700-lecia Miasta Lublin oraz zdobywca statuetki Angelus Lubelski za rok 2020 w kategorii artystycznej. Od czerwca 2023 roku prowadzi podcast „Ty Tu Tworzysz" poświęcony szeroko rozumianej kreatywności w różnych dziedzinach życia, w którym rozmawia z twórczymi ludźmi kultury, sztuki, biznesu i nauki, o tym czym jest kreatywność, jak ją w sobie odkrywać i rozwijać, jak pielęgnować twórcze pasje i zdolności, a także jak praktycznie wykorzystywać kreatywność w życiu.<br><br>Entuzjasta cyklizmu - jeździ na rowerach górskich, szosowych, miejskich, a nawet na bicyklu.<br>Do opanowania pozostał mu jeszcze monocykl.&nbsp;</p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="../../assets/img/speakers/accelerate_2024/dfilipiuk.png" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Dorota Filipiuk</h3>
+                    <p class="card-text speaker-title mb-2">Psycholog</p>
+                    <p class="card-text speaker-bio mb-3">Dorota Filipiuk jest psychologiem, trenerem efektywności osobistej i technik nauki. Jest autorką jedynego w Polsce programu efektywnej nauki na 5 poziomach: Akademii Geniusza, Akademii Geniusza dla Lekarzy i Akademii Młodego Geniusza.&nbsp;Z jej kursów korzysta prawie 50 000 Kursantów. Na doktoracie z psychologii zajmowała się gamifikacją.&nbsp; Jest współautorką produktów wspierających proces diagnozy i rozwoju potencjału zdolnych gimnazjalistów, prelegentką na licznych konferencjach i gościem w wielu podcastach. Prowadzi kanał w serwisie YouTube i podcast ,,Efektywność Osobista".<br>Dorota przez 8 lat prowadziła szkolenia dla uczniów, studentów, rodziców, nauczycieli, firm i instytucji na temat technik nauki i efektywności osobistej.<br>Jej artykuły znajdziesz m.in. w Wysokich Obcasach, Forbes'ie czy Estate. Była wykładowcą na dwóch uczelniach wyższych, prowadziła szkolenia m.in. dla MAN, Stella i Bank Polski.<br><br>W podróży dookoła świata założyła 2 firmy online. Jest szczęśliwą mamą Kornelki i Dawidka, pasjonatką zdrowego stylu życia. W wolnych chwilach kocha malować i uprawiać aerial yogę.</p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="../../assets/img/blank_profile_picture.webp" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Magda Bigaj</h3>
+                    <p class="card-text speaker-title mb-2">*speaker role*</p>
+                    <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0);">*speaker description*</span></p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-50 my-4 border-dark-subtle">
+            <div class="row px-3">
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="../../assets/img/blank_profile_picture.webp" alt="Speaker 1"></div>
+                <div class="col my-3 col-12 col-lg-8">
+                    <h3 class="card-title speaker-name">Kevin Johannes Worner</h3>
+                    <p class="card-text speaker-title mb-2">*speaker role*</p>
+                    <p class="card-text speaker-bio mb-3">Kevin is a Polish-German investor and media entrepreneur.<br>He serves as the Managing Director of Deus Media Group, an ever-growing network of YouTube and social media channels mostly in the business niche built via buy &amp; build - reaching millions of engaged long-form viewers each month.<br>Additionally, DMG is building YouTube channels for companies and individuals, enabling them to reach customers at low cost, build a strong employer brand and trust with their desired audience.<br><br>When he is not working he is working out: You can find him in the local Muay Thai club getting ready for his fight.<br><br><br></p>
+                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light shadow-lg py-3 justify-content-center">
+        <div class="container">
+            <div class="text-center w-100" style="max-width: 1500px;">
+                <div class="py-3"><img class="w-75" src="../../assets/img/logo-black-accelerate.png" style="max-width: 750px;">
+                    <h4 class="fw-bold py-3">AGENDA WYDARZENIA</h4>
+                </div>
+            </div>
+            <div class="accordion py-3" role="tablist" id="agendaAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingRegistration"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegistration" aria-expanded="true" aria-controls="collapseRegistration"> 13:00 - Rejestracja </button></h2>
+                    <div class="accordion-collapse collapse show item-1 item-1 show" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingRegistration" id="collapseRegistration">
+                        <div class="accordion-body">
+                            <p>Welcome to TEDxLublin! Please arrive early to complete your registration, receive your badge, and get settled before the event begins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingInauguration"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInauguration" aria-expanded="false" aria-controls="collapseInauguration"> 13:30 - Inaguracja </button></h2>
+                    <div class="accordion-collapse collapse item-2 item-2" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingInauguration" id="collapseInauguration">
+                        <div class="accordion-body">
+                            <p>Join us for the official opening of TEDxLublin. Our host will introduce the event theme and set the stage for an inspiring day of ideas worth spreading.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingShow1"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow1" aria-expanded="false" aria-controls="collapseShow1"> 13:40 - Pokaz 1 (teatr improwizowany?) </button></h2>
+                    <div class="accordion-collapse collapse item-3 item-3" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingShow1" id="collapseShow1">
+                        <div class="accordion-body">
+                            <p>Experience the excitement of improvisational theater as our talented performers create spontaneous scenes based on audience suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingSpeakers"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpeakers" aria-expanded="false" aria-controls="collapseSpeakers"> 14:00 - 19:00 - Speaker Sessions </button></h2>
+                    <div class="accordion-collapse collapse item-4 item-4" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingSpeakers" id="collapseSpeakers">
+                        <div class="accordion-body">
+                            <div class="accordion" role="tablist" id="speakersAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab" id="headingSpeaker1"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpeaker1" aria-expanded="false" aria-controls="collapseSpeaker1"> 14:00 - Prelegent 1 <span class="badge rounded-pill bg-primary ms-2" id="badgeSpeaker1">25 min</span></button></h2>
+                                    <div class="accordion-collapse collapse show item-1 item-1" role="tabpanel" data-bs-parent="#speakersAccordion" aria-labelledby="headingSpeaker1" id="collapseSpeaker1">
+                                        <div class="accordion-body">
+                                            <p>Details about Prelegent 1's presentation...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab" id="headingSpeaker2"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpeaker2" aria-expanded="false" aria-controls="collapseSpeaker2"> 14:25 - Prelegent 2 <span class="badge rounded-pill bg-primary ms-2" id="badgeSpeaker2">25 min</span></button></h2>
+                                    <div class="accordion-collapse collapse item-2 item-2" role="tabpanel" data-bs-parent="#speakersAccordion" aria-labelledby="headingSpeaker2" id="collapseSpeaker2">
+                                        <div class="accordion-body">
+                                            <p>Details about Prelegent 2's presentation...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab" id="headingSpeaker3"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpeaker3" aria-expanded="false" aria-controls="collapseSpeaker3"> 14:50 - Prelegent 3 <span class="badge rounded-pill bg-primary ms-2" id="badgeSpeaker3">25 min</span></button></h2>
+                                    <div class="accordion-collapse collapse item-3 item-3" role="tabpanel" data-bs-parent="#speakersAccordion" aria-labelledby="headingSpeaker3" id="collapseSpeaker3">
+                                        <div class="accordion-body">
+                                            <p>Details about Prelegent 3's presentation...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" role="tab" id="headingBreak"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreak" aria-expanded="false" aria-controls="collapseBreak"> 15:40 - Przerwa kawowa <span class="badge rounded-pill bg-secondary ms-2">60 min</span></button></h2>
+                                    <div class="accordion-collapse collapse item-4 item-4" role="tabpanel" data-bs-parent="#speakersAccordion" aria-labelledby="headingBreak" id="collapseBreak">
+                                        <div class="accordion-body">
+                                            <p>Take a break, enjoy refreshments, and network with fellow attendees.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingShow2"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow2" aria-expanded="false" aria-controls="collapseShow2"> 17:55 - Pokaz 2/OpenMic (pokaz zewnętrzny z konkursu?) </button></h2>
+                    <div class="accordion-collapse collapse item-5 item-5" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingShow2" id="collapseShow2">
+                        <div class="accordion-body">
+                            <p>Enjoy a special performance selected from our community contest. This segment showcases local talent and innovative ideas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingClosing"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClosing" aria-expanded="false" aria-controls="collapseClosing"> 19:25 - Ceremonia zamknięcia/ Pokaz 3 (skrzypce?) </button></h2>
+                    <div class="accordion-collapse collapse item-6 item-6" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingClosing" id="collapseClosing">
+                        <div class="accordion-body">
+                            <p>Join us for the closing ceremony featuring a special violin performance. We'll reflect on the day's inspiring talks and look forward to future TEDxLublin events.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" role="tab" id="headingAfter"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfter" aria-expanded="false" aria-controls="collapseAfter"> 21:00 - After </button></h2>
+                    <div class="accordion-collapse collapse item-7 item-7" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingAfter" id="collapseAfter">
+                        <div class="accordion-body">
+                            <p>Continue the conversation and networking at our after-event gathering. This is a great opportunity to meet speakers, fellow attendees, and the TEDxLublin team in a relaxed setting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 py-xl-5 bg-light shadow-lg">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
+                    <div>
+                        <h2 class="text-uppercase fw-bold mb-3">PODOBA CI SIĘ TO CO ROBIMY?</h2>
+                        <p class="mb-4">Poznaj nas i sprawdź w jaki sposób możesz z nami współpracować.</p><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">KONTAKT</button><button class="btn fs-5 py-2 px-4 btn-outline-dark" type="button">FAQ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container text-white py-4 py-xl-5 display-shadow">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h1 class="text-uppercase fw-bold mb-3 display-shadow">obejrzyj poprzednie wystąpienia</h1>
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                <div class="col">
+                    <div><iframe class="shadow-lg" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/pDy0THA9tvY" width="100%" height="250px"></iframe>
+                        <div class="py-4">
+                            <h4>Tomasz Knapik</h4>
+                            <h5>Potęga Głosu.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><iframe class="shadow-lg" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/HjipVqoRXm0" width="100%" height="250px"></iframe>
+                        <div class="py-4">
+                            <h4>Jacek Santorski</h4>
+                            <h5>Mentoring. Opowieść osobista.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><iframe class="shadow-lg" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/SIcY83qBTsQ" width="100%" height="250px"></iframe>
+                        <div class="py-4">
+                            <h4>Artur Małek</h4>
+                            <h5>Dlaczego smartfon nie powinien cię budzić?</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><iframe class="shadow-lg" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/BSDHAEZhc7E" width="100%" height="250px"></iframe>
+                        <div class="py-4">
+                            <h4>Katarzyna Bierzanowska</h4>
+                            <h5>Niepełnosprawność jest ludzka.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><iframe class="shadow-lg" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/IRteowA3cKo" width="100%" height="250px"></iframe>
+                        <div class="py-4">
+                            <h4>Petros Psyllos</h4>
+                            <h5>Roboty od czarnej roboty.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div><iframe class="shadow-lg" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/McpgE0njHZk" width="100%" height="250px"></iframe>
+                        <div class="py-4">
+                            <h4>Alicja Rapsiewicz, Andrzej Budnik</h4>
+                            <h5>Jak zwiedzić świat i nie zbankrutować?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-subscribe p-3 py-xl-5">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-8 col-xl-6 mx-auto text-white">
+                    <h2 class="display-6 lead display-shadow">Subscribe to our newsletter</h2>
+                    <p class="display-shadow">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+                </div>
+            </div>
+            <form class="d-flex justify-content-center flex-wrap" method="post">
+                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="Your Email"></div>
+                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subscribe </button></div>
+            </form>
+        </div>
+    </section>
+    <footer class="page-footer shadow-lg p-3">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col">
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="../../assets/img/logo-black.png"></a></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">Accelerate 2024</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted text-decoration-none" href="{% url 'event' lang='pl' %}">Wydarzenie</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'tickets' lang='pl' %}">Bilety</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'partners' lang='pl' %}">Partnerzy</a></li>
+                    </ul>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">informacje</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted text-decoration-none" href="{% url 'about' lang='pl' %}">About</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'team' lang='pl' %}">Zespół</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact' lang='pl' %}">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">dołącz</h5>
+                    <ul class="list-unstyled">
+                        <li class="{% url 'event' lang='pl' %}"><a class="text-muted text-decoration-none" href="{% url 'contact_speakers' lang='pl' %}">Prelegenci</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact_partners' lang='pl' %}">Partnerzy</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact_volunteers' lang='pl' %}">Wolontariusze</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">bądź na bieżąco</h5>
+                    <div class="d-flex gap-3"><a class="text-muted" href="https://www.facebook.com/TEDxLublin"><i class="fab fa-facebook-f fa-lg"></i></a><a class="text-muted" href="https://www.instagram.com/tedxlublin/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram fa-lg">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a><a class="text-muted" href="https://www.linkedin.com/company/tedxlublin"><i class="fab fa-linkedin-in fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-legal"></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-10 mb-5 mb-xl-9 border-dark-subtle">
+            <div class="row">
+                <div class="col col-6 col-xs-6 col-lg-4">
+                    <div class="footer-legal">
+                        <p><sub style="font-weight:normal;color:rgb(107, 114, 128);">@ 2024 - TEDxLublin. Wszystkie prawa zastrzeżone.</sub></p>
+                    </div>
+                </div>
+                <div class="col col-6 col-xs-6 col-lg-4">
+                    <div class="footer-legal">
+                        <p><sub style="font-weight:normal;color:rgb(107, 114, 128);">To niezależne wydarzenie TEDx jest organizowane na licencji TED</sub></p>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4">
+                    <div class="d-xxl-flex justify-content-xxl-end footer-legal">
+                        <p style="text-align: right;"><sub style="font-weight:normal;color:rgb(107, 114, 128);">Website design by Artur Podsiadły<br>artpods56@gmail.com</sub></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/sidebar.js"></script>
+    <script src="../../assets/js/swiper-with-cards-swiper.js"></script>
+    <script src="../../assets/js/timer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.language-selector {
+  position: fixed;
+  z-index: 1030;
+  bottom: 20px;
+  left: 20px;
+}
+
