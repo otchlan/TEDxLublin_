@@ -1,0 +1,21 @@
+---
+version: "3.8"
+services:
+  web:
+    build:
+      context: ./tedxlublin
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.dev
+    container_name: www
+    
+    environment:
+      DEBUG: "1"
+    restart: always
+    volumes:
+      - type: bind
+        source: ./tedxlublin
+        target: /www
