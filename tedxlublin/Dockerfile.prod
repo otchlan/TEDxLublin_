@@ -34,19 +34,17 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/tedxlublin/wheels -r
 # pull official base image
 FROM python:3.11.4-slim-buster
 
-# create directory for the app user
-RUN mkdir -p /home/tedxlublin
+# creating paths
+ENV HOME=/home/www
+ENV APP_HOME=/home/www/tedxlublin
 
-# create the app user
-RUN addgroup --system app && adduser --system --group app
+# creating directories
+RUN mkdir -p $APP_HOME/staticfiles
 
-# create the appropriate directories
-ENV HOME=/home/tedxlublin
-ENV APP_HOME=/home/tedxlublin/webapp
-RUN mkdir $APP_HOME
+# seting working directory
 WORKDIR $APP_HOME
 
-# install dependencies
+# installing dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends netcat
 COPY --from=builder /usr/src/tedxlublin/wheels /wheels
 COPY --from=builder /usr/src/tedxlublin/requirements.txt .
@@ -56,8 +54,18 @@ RUN pip install --no-cache /wheels/*
 # copy project
 COPY . $APP_HOME
 
-# chown all the files to the app user
+# making script executable
+RUN chmod +x $APP_HOME/entrypoint.sh
+
+# create the tedxlublin user
+RUN addgroup --system tedxlublin && adduser --system --group tedxlublin
+
+
+# chown all the files to the tedxlublin user
 RUN chown -R tedxlublin:tedxlublin $APP_HOME
 
-# change to the app user
+# switching to tedxlublin user
 USER tedxlublin
+
+RUN echo "Excute the entrypoint.sh script"
+ENTRYPOINT ["bash", "$APP_HOME/entrypoint.sh"]
