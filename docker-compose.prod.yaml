@@ -13,7 +13,7 @@ services:
       - ./.env.prod
     volumes:
       - static_volume:/home/web/tedxlublin/staticfiles
-      - certbot_volume:/var/certbot/conf:/etc/letsencrypt/:ro
+      - /var/certbot/conf:/etc/letsencrypt/:ro
 
 
   nginx:
