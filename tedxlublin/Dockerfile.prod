@@ -68,4 +68,4 @@ RUN chown -R tedxlublin:tedxlublin $APP_HOME
 USER tedxlublin
 
 RUN echo "Excute the entrypoint.sh script"
-ENTRYPOINT ["bash", "$APP_HOME/entrypoint.sh"]
+ENTRYPOINT ["bash", "/home/www/tedxlublin/entrypoint.sh"]
