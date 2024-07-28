@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Helvetica';
-	src: url(../../assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2) format('woff2'),
-	url(../../assets/fonts/Helvetica-055f55df87ae1f34028dc8f41e6edfd6.woff) format('woff');
+	src: url(/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2) format('woff2'),
+	url(/assets/fonts/Helvetica-055f55df87ae1f34028dc8f41e6edfd6.woff) format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
