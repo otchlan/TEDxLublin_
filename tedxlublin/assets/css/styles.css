@@ -1,4 +1,9 @@
 /* Style for the badge when the accordion is expanded */
+body {
+font-family: Helvetica !important;
+
+}
+
 
 .slide-panel {
   position: fixed;
