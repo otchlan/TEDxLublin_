@@ -21,13 +21,8 @@
     <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/footer-pl.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/lang-selector.css">
-    <link rel="stylesheet" href="/assets/css/navbar-en.css">
-    <link rel="stylesheet" href="/assets/css/navbar-overlay.css">
-    <link rel="stylesheet" href="/assets/css/partners-en.css">
-    <link rel="stylesheet" href="/assets/css/partners.compiled.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -46,8 +41,8 @@
             <div class="collapse navbar-collapse" style="font-weight:bold;">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'team' lang='pl' %}">O NAS</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
                     <li class="nav-item"><a class="nav-link rounded" id="tickets-btn" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
@@ -55,13 +50,13 @@
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
                             <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'team' lang='pl' %}">O NAS</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
@@ -71,7 +66,7 @@
             </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
         </div>
     </nav>
-    <section class="newsletter-subscribe p-3 py-xl-5 baner"></section>
+    <section class="newsletter-subscribe p-3 py-xl-5 baner" style="background: url(&quot;/assets/img/arrows_accelerate_white_baner.png&quot;) right / auto no-repeat;"></section>
     <section class="bg-light shadow-lg py-5">
         <div class="container">
             <div class="row pt-2 justify-content-center">
@@ -95,27 +90,65 @@
             </div>
         </div>
         <div class="container pt-4 pt-xl-5">
-            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-4 m-3 d-flex justify-content-center">
+            <div class="row row-cols-1 row-cols-xl-2 d-flex justify-content-center">
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/mszczepanska.png" alt="Speaker 1" style="filter: saturate(106%);">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Małgorzata Szczepańska</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Organizator</p>
-                            <p class="card-text speaker-bio mb-3">Mama, nauczycielka angielskiego, przedsiębiorczyni, lubelanka. Na co dzień uczę dorosłych angielskiego, a raczej porozumiewania się po angielsku oraz przygotowuję uczniów do egzaminów. W weekendy prowadzę warsztaty językowe dla dzieci, a w wakacje organizuję półkolonie Czas na SummerTOK.<br><br>TED-a znam z moich własnych zajęć, bowiem TED talk’i wykorzystuję jako ciekawą inspirację do mówienia oraz nauki słuchania ze zrozumieniem po angielsku.</p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="row pt-2 justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 justify-content-center mt-3">
+                            <h2 class="fw-bold text-center">ORGANIZATORZY</h2>
+                            <hr class="mx-auto w-50 border-dark-subtle">
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center gy-3">
+                        <div class="col">
+                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/rszuwalski.png" alt="Speaker 1" style="filter: saturate(106%);">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title speaker-name text-primary">Rafał Szuwalski</h3>
+                                    <p class="card-text speaker-title mb-2 fw-bold text-muted">Organizator</p>
+                                    <p class="card-text speaker-bio mb-3"></p>
+                                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/mszczepanska.png" alt="Speaker 1" style="filter: saturate(106%);">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title speaker-name text-primary">Małgorzata Szczepańska</h3>
+                                    <p class="card-text speaker-title mb-2 fw-bold text-muted">Organizator</p>
+                                    <p class="card-text speaker-bio mb-3">Mama, nauczycielka angielskiego, przedsiębiorczyni, lubelanka. Na co dzień uczę dorosłych angielskiego, a raczej porozumiewania się po angielsku oraz przygotowuję uczniów do egzaminów. W weekendy prowadzę warsztaty językowe dla dzieci, a w wakacje organizuję półkolonie Czas na SummerTOK.<br><br>TED-a znam z moich własnych zajęć, bowiem TED talk’i wykorzystuję jako ciekawą inspirację do mówienia oraz nauki słuchania ze zrozumieniem po angielsku.</p>
+                                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/akot.png" alt="Speaker 1">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Aleksandra Kot</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Koordynatorka ds. prelegentów</p>
-                            <p class="card-text speaker-bio mb-3">Coach, szkoleniowiec oraz trener mentalny, studiująca Psychologię Biznesu, Filologię Angielską oraz Germanistykę. Jest aktywną członkinią Toastmasters Lublin, współzałożycielką Mireckiej Drużyny Harcerek "Tajemnica" oraz Koła Kreatywnych Liderów im. Roberta Schumana.<br><br>Jeśli ktoś chciałby ją opisać jednym słowem, brzmiałoby ono zdecydowanie "doer".</p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="row pt-2 justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 justify-content-center mt-3">
+                            <h2 class="fw-bold text-center">WEB DESIGN</h2>
+                            <hr class="mx-auto w-50 border-dark-subtle">
+                        </div>
+                    </div>
+                    <div class="row gy-4 row-cols-1 row-cols-md-2 d-flex justify-content-center gy-3">
+                        <div class="col">
+                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/apodsiadly.png" alt="Speaker 1">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title speaker-name text-primary">Artur Podsiadły</h3>
+                                    <p class="card-text speaker-title mb-2 fw-bold text-muted">IT / Web design</p>
+                                    <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0); background-color: transparent;">Student na kierunku sztuczna inteligencja, którego największą pasją są nowe technologie i szeroko pojęte systemy inteligentne. Swoje zamiłowanie do programowania realizuje poprzez tworzenie wszelakiego rodzaju projektów, od stron internetowych, po rozwiązania oparte o modele językowe. Jest aktywnym działaczem wielu inicjatyw studenckich a także jednym ze współorganizatorów TEDxLublin.</span></p>
+                                    <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row pt-2 justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 justify-content-center mt-3">
+                    <h2 class="fw-bold text-center">MARKETING</h2>
+                    <hr class="mx-auto w-50 border-dark-subtle">
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center gy-3">
                 <div class="col">
                     <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/ytserakhovich.png" alt="Speaker 1">
                         <div class="card-body p-4">
@@ -127,71 +160,12 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/apodsiadly.png" alt="Speaker 1">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Artur Podsiadły</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">IT / Web design</p>
-                            <p class="card-text speaker-bio mb-3"><span style="color: rgb(0, 0, 0); background-color: transparent;">Student na kierunku sztuczna inteligencja, którego największą pasją są nowe technologie i szeroko pojęte systemy inteligentne. Swoje zamiłowanie do programowania realizuje poprzez tworzenie wszelakiego rodzaju projektów, od stron internetowych, po rozwiązania oparte o modele językowe. Jest aktywnym działaczem wielu inicjatyw studenckich a także jednym ze współorganizatorów TEDxLublin.</span></p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
                     <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/bolechowski.png" alt="Speaker 1" style="filter: contrast(115%) saturate(103%);">
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Bartłomiej Olechowski</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Marketing</p>
                             <p class="card-text speaker-bio mb-3"><span style="color: rgb(32, 33, 36); background-color: rgb(248, 249, 250);">Architekt informacji, copywriter, marketingowiec i broker informacji</span><br><span style="color: rgb(32, 33, 36); background-color: rgb(248, 249, 250);">Prowadzi liczne aktywności popularyzujące wyszukiwanie informacji i rozwijające kompetencje informacyjne. Interesuje się popularyzacją wiedzy i informacji, marketingiem, psychologią i UX.</span><br><br></p>
                             <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/pwojcik.png" alt="Speaker 1">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Przemysław Wójcik</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Koordynator ds. prelegentów</p>
-                            <p class="card-text speaker-bio mb-3">Sam o sobie mówi, że jest zawodnikiem, trenerem, szkoleniowcem, ale przede wszystkim sportowcem. To utytułowany zawodnik z 15-letnim stażem w sporcie krajowym i międzynarodowym, który równie skutecznie przełożył swoje doświadczenie na sukcesy jako trener, wspierając zarówno dzieci, młodzież, jak i dorosłych pragnących spełnić swoje marzenia sportowe.</p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/adados.png" alt="Speaker 1">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Agata Dados</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
-                            <p class="card-text speaker-bio mb-3">Jestem Agata i opisać siebie w 3 zdaniach to dla mnie nie lada wyczyn! Uwielbiam kiedy wokoło mnie dużo się dzieje. Do działania nakręcają mnie ludzie, praca z nimi, przebywanie w ich towarzystwie. Uważam, że człowiek jest sercem każdego działania i każdej organizacji, dlatego to właśnie na "czlowieku" skupiam się w tej edycji TEDxLublin!</p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/msierociukperzyna.png" alt="Speaker 1">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Marzena Sierociuk-Perzyna</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
-                            <p class="card-text speaker-bio mb-3">Jestem Agata i opisać siebie w 3 zdaniach to dla mnie nie lada wyczyn! Uwielbiam kiedy wokoło mnie dużo się dzieje. Do działania nakręcają mnie ludzie, praca z nimi, przebywanie w ich towarzystwie. Uważam, że człowiek jest sercem każdego działania i każdej organizacji, dlatego to właśnie na "czlowieku" skupiam się w tej edycji TEDxLublin!</p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/pwinnicki.png" alt="Speaker 1">
-                        <div class="card-body p-4">
-                            <h3 class="card-title speaker-name text-primary">Paweł Winnicki</h3>
-                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegentów</p>
-                            <p class="card-text speaker-bio mb-3">Od dekady jest związany z branżą IT. Rozwija swoje umiejętności przywódcze i wystąpienia publiczne w klubie Skillers Toastmasters, gdzie pełnił różnorodne funkcje, w tym wiceprezesa ds. edukacji, dyrektora rejonu oraz skarbnika. Poza pracą zawodową, zapalony podróżnik i miłośnik literatury faktu.</p>
-                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 shadow-sm"><img class="card-img-top w-100 d-block card-img-top" src="/assets/img/team_members/rszuwalski.png" alt="Associate Name">
-                        <div class="card-body text-center p-2">
-                            <h6 class="text-primary card-title mb-0">Rafał Szuwalski</h6>
-                            <p class="fw-bold text-muted card-text speaker-title mb-2">Organizator</p>
-                            <div class="social-icons"><a class="me-3 text-dark" href="#"><i class="fab fa-facebook"></i></a><a class="me-3 text-dark" href="#"><i class="fab fa-instagram"></i></a><a class="text-dark" href="#"><i class="fab fa-linkedin"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -216,43 +190,83 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm"><img class="card-img-top w-100 d-block card-img-top" src="/assets/img/member_placeholder_picture.png" alt="Associate Name">
-                        <div class="card-body text-center p-2">
-                            <h6 class="text-primary card-title mb-0">Zuzanna Czeczelewska</h6>
-                            <p class="fw-bold text-muted card-text speaker-title mb-2">Marketing / Copywriting</p>
-                            <div class="social-icons"><a class="me-3 text-dark" href="#"><i class="fab fa-facebook"></i></a><a class="me-3 text-dark" href="#"><i class="fab fa-instagram"></i></a><a class="text-dark" href="#"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/zczeczelewska.jpg" alt="Speaker 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title speaker-name text-primary">Zuzanna Czeczelewska</h3>
+                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Marketing / Copywriting</p>
+                            <p class="card-text speaker-bio mb-3">Ulubione motto: “nie wolno zgadzać się na pełzanie, gdy czuje się potrzebę latania”.</p>
+                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 mt-3">
+                    <h2 class="fw-bold text-center">OPIEKUNOWIE PRELEGENTÓW</h2>
+                    <hr class="mx-auto w-50 border-dark-subtle">
+                </div>
+            </div>
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center">
+                <div class="col">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/akot.png" alt="Speaker 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title speaker-name text-primary">Aleksandra Kot</h3>
+                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
+                            <p class="card-text speaker-bio mb-3">Coach, szkoleniowiec oraz trener mentalny, studiująca Psychologię Biznesu, Filologię Angielską oraz Germanistykę. Jest aktywną członkinią Toastmasters Lublin, współzałożycielką Mireckiej Drużyny Harcerek "Tajemnica" oraz Koła Kreatywnych Liderów im. Roberta Schumana.<br><br>Jeśli ktoś chciałby ją opisać jednym słowem, brzmiałoby ono zdecydowanie "doer".</p>
+                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/pwojcik.png" alt="Speaker 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title speaker-name text-primary">Przemysław Wójcik</h3>
+                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
+                            <p class="card-text speaker-bio mb-3">Sam o sobie mówi, że jest zawodnikiem, trenerem, szkoleniowcem, ale przede wszystkim sportowcem. To utytułowany zawodnik z 15-letnim stażem w sporcie krajowym i międzynarodowym, który równie skutecznie przełożył swoje doświadczenie na sukcesy jako trener, wspierając zarówno dzieci, młodzież, jak i dorosłych pragnących spełnić swoje marzenia sportowe.</p>
+                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/adados.png" alt="Speaker 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title speaker-name text-primary">Agata Dados</h3>
+                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
+                            <p class="card-text speaker-bio mb-3">Jestem Agata i opisać siebie w 3 zdaniach to dla mnie nie lada wyczyn! Uwielbiam kiedy wokoło mnie dużo się dzieje. Do działania nakręcają mnie ludzie, praca z nimi, przebywanie w ich towarzystwie. Uważam, że człowiek jest sercem każdego działania i każdej organizacji, dlatego to właśnie na "czlowieku" skupiam się w tej edycji TEDxLublin!</p>
+                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/msierociukperzyna.png" alt="Speaker 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title speaker-name text-primary">Marzena Sierociuk-Perzyna</h3>
+                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
+                            <p class="card-text speaker-bio mb-3">Mówi o sobie, że jest Jubilerem wystąpień publicznych.<br>Od ponad 4 lat szlifuje i dodaje blasku słowom oraz mówiącym je osobom.I to zarówno na etacie – w firmie z branży IT, jak i rozwijając własną działalność usługową (w tym wypadku Jej Klientami są głównie przedsiębiorcy).Marzena pokazuje również, że wystąpienia publiczne to nie tylko wielka scena - lecz także rozmowa z Klientem, przedstawienie się na networkingu czy rozmowa rekrutacyjna.</p>
+                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/team_members/pwinnicki.png" alt="Speaker 1">
+                        <div class="card-body p-4">
+                            <h3 class="card-title speaker-name text-primary">Paweł Winnicki</h3>
+                            <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
+                            <p class="card-text speaker-bio mb-3">Od dekady jest związany z branżą IT. Rozwija swoje umiejętności przywódcze i wystąpienia publiczne w klubie Skillers Toastmasters, gdzie pełnił różnorodne funkcje, w tym wiceprezesa ds. edukacji, dyrektora rejonu oraz skarbnika. Poza pracą zawodową, zapalony podróżnik i miłośnik literatury faktu.</p>
+                            <div class="d-flex justify-content-start social-icons"><a href="#" class="me-3 text-dark"><i class="fab fa-facebook"></i></a><a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a><a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <hr class="mx-auto w-50 my-4 border-dark-subtle">
-        <div class="container">
-            <div class="row gy-4 gy-md-0">
-                <div class="col offset-xxl-0 col-12 col-md-6">
-                    <h2 class="fw-bold m-0">ABOUT&nbsp;<span style="color:var(--tedx-red);">TEDx</span></h2>
-                    <p><strong><span style="color: rgb(102, 102, 102); background-color: rgb(255, 255, 255);">x = niezależnie organizowane wydarzenie</span></strong></p>
-                    <p class="mb-4">W duchu odkrywania i rozpowszechniania pomysłów, TED stworzył program o nazwie TEDx. TEDx to program lokalnych, samodzielnie organizowanych wydarzeń, które gromadzą ludzi w celu dzielenia się doświadczeniami podobnymi do TED. Nasze wydarzenie nosi nazwę TEDxLublin, gdzie x = niezależnie zorganizowane wydarzenie TED. Podczas naszego wydarzenia TEDxLublin, wideo TED Talks i prelegenci na żywo połączą się, aby wywołać głęboką dyskusję i nawiązać kontakt w małej grupie. Konferencja TED zapewnia ogólne wytyczne dla programu TEDx, ale poszczególne wydarzenia TEDx, w tym nasze, są organizowane samodzielnie.</p>
-                </div>
-                <div class="col col-12 col-md-6">
-                    <div class="d-flex">
-                        <div class="px-3">
-                            <h2 class="fw-bold m-0"><span style="color:var(--tedx-red);">TEDx</span>Lublin <br>ACCELERATE 2024</h2>
-                            <p>Dołącz do nas na TEDxLublin, aby dowiedzieć się, jak możemy przyspieszyć do jutra już dziś.</p><a href="#"><span style="color: var(--tedx-red);">Dowiedz się więcej o TED</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
-                                </svg></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <section class="py-4 py-xl-5">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
                         <div>
                             <h2 class="text-uppercase fw-bold mb-3">chcesz do nas dołączyć?</h2>
-                            <p class="mb-2">Jeśli chcesz dowiedzieć się więcej o naszych działaniach i być częścią ekscytujących projektów, dołącz do nas. Skontaktuj się z nami, aby uzyskać więcej informacji i stać się częścią naszej dynamicznej społeczności.<br><br></p><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">KONTAKT</button>
+                            <p class="mb-2">Jeśli chcesz dowiedzieć się więcej o naszych działaniach i być częścią ekscytujących projektów, dołącz do nas. Skontaktuj się z nami, aby uzyskać więcej informacji i stać się częścią naszej dynamicznej społeczności.<br><br></p><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">KONTAKT</button><button class="btn fs-5 btn-outline-primary me-2 py-2 px-4" type="button">IDEA</button>
                         </div>
                     </div>
                 </div>

@@ -21,13 +21,8 @@
     <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/footer-pl.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/lang-selector.css">
-    <link rel="stylesheet" href="/assets/css/navbar-en.css">
-    <link rel="stylesheet" href="/assets/css/navbar-overlay.css">
-    <link rel="stylesheet" href="/assets/css/partners-en.css">
-    <link rel="stylesheet" href="/assets/css/partners.compiled.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -44,8 +39,8 @@
         <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-black.png"></a>
             <div class="collapse navbar-collapse" style="font-weight:bold;">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
@@ -54,11 +49,11 @@
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
-                            <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>

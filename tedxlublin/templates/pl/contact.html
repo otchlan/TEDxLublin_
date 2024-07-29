@@ -21,13 +21,8 @@
     <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/footer-pl.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/lang-selector.css">
-    <link rel="stylesheet" href="/assets/css/navbar-en.css">
-    <link rel="stylesheet" href="/assets/css/navbar-overlay.css">
-    <link rel="stylesheet" href="/assets/css/partners-en.css">
-    <link rel="stylesheet" href="/assets/css/partners.compiled.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -41,43 +36,43 @@
         <div class="w-100 h-100 dimmer"></div>
     </div>
     <div class="overlay"></div>
-    <nav class="navbar navbar-expand-lg fixed-top bg-body shadow">
-        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="/templates/pl/index.html"><img src="/assets/img/logo-black.png"></a>
+    <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
+        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-black.png"></a>
             <div class="collapse navbar-collapse" style="font-weight:bold;">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/templates/pl/accelerate.html">ACCELERATE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/templates/pl/about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/templates/pl/team.html">TEAM</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/templates/pl/partners.html">PARTNERS</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/templates/pl/contact.html">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link rounded" href="/templates/pl/tickets.html" id="tickets-btn-1" style="border-radius:0.5rem;">TICKETS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                    <li class="nav-item"><a class="nav-link rounded" id="tickets-btn" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
                 </ul>
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a href="/templates/pl/index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
-                            <li class="nav-item"><a class="nav-link" href="/templates/pl/accelerate.html">ACCELERATE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/templates/pl/about.html">ABOUT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/templates/pl/team.html">TEAM</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/templates/pl/partners.html">PARTNERS</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="/templates/pl/contact.html">CONTACT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/templates/pl/tickets.html">TICKETS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
                         </ul>
                     </div>
                 </nav>
-            </div><button class="btn btn-primary d-flex d-lg-none open-menu sidebar-btn position-fixed" type="button"><i class="fa fa-navicon"></i></button>
+            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
         </div>
     </nav>
-    <section class="newsletter-subscribe p-3 py-xl-5 baner"></section>
+    <section class="newsletter-subscribe p-3 py-xl-5 baner" style="background: url(&quot;/assets/img/arrows_accelerate_white_baner.png&quot;) right / auto no-repeat;"></section>
     <section class="bg-light"></section>
     <section class="bg-light">
         <div class="container h-100">
             <div class="row pt-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2 class="fw-bold">CONTACT US</h2>
+                    <h2 class="fw-bold">SKONTAKTUJ SIĘ Z NAMI</h2>
                     <hr class="mx-auto w-50 mb-5 mb-xl-9 border-dark-subtle">
                 </div>
             </div>
@@ -88,7 +83,7 @@
                 <div class="col d-flex flex-column justify-content-center p-4">
                     <div class="text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
                         <div>
-                            <h4 class="fw-bold">SPONSORS</h4>
+                            <h4 class="fw-bold">SPONSORZY</h4>
                             <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><a href="/templates/pl/forms/partner_form.html">Sponsors form&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>
@@ -96,7 +91,7 @@
                     </div>
                     <div class="text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
                         <div>
-                            <h4 class="fw-bold">VOLUNTEERS</h4>
+                            <h4 class="fw-bold">WOLONTARIUSZE</h4>
                             <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><a href="/templates/pl/forms/volunteer_form.html">Volunteers form&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>
@@ -104,7 +99,7 @@
                     </div>
                     <div class="text-md-start d-flex flex-column align-items-center align-items-md-start">
                         <div>
-                            <h4 class="fw-bold">SPEAKERS</h4>
+                            <h4 class="fw-bold">PRELEGENCI</h4>
                             <p>Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><a href="/templates/pl/forms/speaker_form.html">Speakers form&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>

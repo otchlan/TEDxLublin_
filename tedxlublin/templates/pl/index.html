@@ -21,13 +21,8 @@
     <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/footer-pl.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/lang-selector.css">
-    <link rel="stylesheet" href="/assets/css/navbar-en.css">
-    <link rel="stylesheet" href="/assets/css/navbar-overlay.css">
-    <link rel="stylesheet" href="/assets/css/partners-en.css">
-    <link rel="stylesheet" href="/assets/css/partners.compiled.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
@@ -45,7 +40,7 @@
             <div class="collapse navbar-collapse" style="font-weight:bold;">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
@@ -54,7 +49,7 @@
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
@@ -72,11 +67,11 @@
     </nav>
     <section class="bg-white" style="padding-top: 65px;">
         <div class="container">
-            <div class="row justify-content-md-center">
+            <div class="row justify-content-md-center py-3">
                 <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
                     <h2 class="text-uppercase fs-6 text-center text-secondary mb-2">przygotuj się na</h2>
                     <h2 class="text-uppercase fw-bold mb-3 text-center">nasze nadchodzące wydarzenie</h2>
-                    <hr class="mx-auto w-50 mb-5 mb-xl-9 border-dark-subtle">
+                    <hr class="mx-auto w-50 mb-xl-9 border-dark-subtle">
                 </div>
             </div>
         </div>
@@ -337,14 +332,7 @@
                 </div>
             </div>
         </div>
-    </footer><div class="language-selector" style="bottom: 20px;right: 20px;">
-    <div class="dropdown"><button id="languageDropdown" class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="flag-icon" src="https://flagcdn.com/w20/us.png" alt="English" /> English </button>
-        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-            <li><a class="dropdown-item" href="#"><img class="flag-icon" src="https://flagcdn.com/w20/pl.png" alt="Polish" /> Polski</a></li>
-            <li><a class="dropdown-item" href="#"><img class="flag-icon" src="https://flagcdn.com/w20/us.png" alt="English" /> English</a></li>
-        </ul>
-    </div>
-</div>
+    </footer>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
