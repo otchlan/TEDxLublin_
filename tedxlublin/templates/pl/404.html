@@ -8,8 +8,8 @@
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>TEDxLublin 2024: ACCELERATE</title>
-    <link rel="canonical" href="https://www.tedxlublin.live/templates/pl/partners.html">
-    <meta property="og:url" content="https://www.tedxlublin.live/templates/pl/partners.html">
+    <link rel="canonical" href="https://www.tedxlublin.live/templates/pl/404.html">
+    <meta property="og:url" content="https://www.tedxlublin.live/templates/pl/404.html">
     <meta property="og:image" content="https://www.tedxlublin.live/assets/img/event_baners_horizontal/baner_white_v2.png">
     <meta name="" content="">
     <meta name="description" content="Dołącz do nas na TEDxLublin 2024, gdzie motywem przewodnim jest &quot;ACCELERATE&quot;. Odkryj, jak przyspieszać zmiany w technologii, społeczeństwie i środowisku. Inspirujące wystąpienia, wizjonerscy mówcy i unikalne doświadczenia czekają na Ciebie 7 września w Lublinie. Zarezerwuj swoje miejsce już dziś!">
@@ -28,14 +28,13 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
-<body>
-    <div id="background-container">
-        <div class="bg"></div>
-        <div class="bg bg-reverse"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg-reverse bg2"></div>
-        <div class="w-100 h-100 dimmer"></div>
-    </div>
+<body><div>
+    <div class="bg"></div>
+    <div class="bg bg-reverse"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg-reverse bg2"></div>
+    <div class="w-100 h-100 dimmer"></div>
+</div>
     <div class="overlay"></div>
     <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
         <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-black.png"></a>
@@ -44,21 +43,21 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
                     <li class="nav-item"><a class="nav-link rounded" id="tickets-btn" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
                 </ul>
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
                             <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
                         </ul>
@@ -67,56 +66,16 @@
             </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
         </div>
     </nav>
-    <section class="py-4 py-xl-5">
-        <div class="container pt-5">
+    <section class="d-flex justify-content-center align-items-center vh-100" style="background:url('/assets/img/ACCELERATE%202024%20–%20white%20logo.png') center / cover;">
+        <div class="container text-center">
             <div class="row">
-                <div class="col"><img id="baner-image" width="100" height="80"></div>
-            </div>
-            <div class="border rounded border-0 border-dark overflow-hidden"></div>
-        </div>
-    </section>
-    <section class="py-3 py-md-5 py-xl-8 shadow-lg bg-light">
-        <div class="container">
-            <div class="row justify-content-md-center pt-2">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                    <p class="text-uppercase text-center text-secondary mb-2 mx-4">przy tworzeniu wydarzenia wsparli nas nasi</p>
-                    <h2 class="text-uppercase fw-bold mb-3 text-center">partnerzy i sponsorzy</h2>
-                    <hr class="mx-auto w-50 mb-5 mb-xl-9 border-dark-subtle">
+                <div class="col-12">
+                    <div class="text-white">
+                        <h1 class="display-1 text-uppercase fw-bold mb-4" style="font-size:10rem;">404</h1>
+                        <p class="lead mb-4">Ups! Strona, której szukasz, nie istnieje.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container overflow-hidden">
-            <div class="row gy-4">
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/sponsors/accelerate_2024/nancy_accessories.png" width="100%"></div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/sponsors/accelerate_2024/look_as_photographer.png" width="100%"></div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/sponsors/accelerate_2024/jz.png" width="100%"></div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/sponsors/accelerate_2024/lublin_game_spot.png" width="100%"></div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/sponsors/accelerate_2024/mtrojanowska.png" width="100%"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="newsletter-subscribe p-3 py-xl-5">
-        <div class="container">
-            <div class="row mb-2">
-                <div class="col-md-8 col-xl-6 mx-auto text-white">
-                    <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
-                    <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
-                </div>
-            </div>
-            <form class="d-flex justify-content-center flex-wrap" method="post">
-                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="e-mail"></div>
-                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subskrybuj</button></div>
-            </form>
         </div>
     </section>
     <footer class="page-footer shadow-lg p-3">
@@ -177,7 +136,7 @@
                 </div>
                 <div class="col col-sm-12 col-lg-4">
                     <div class="d-xxl-flex justify-content-xxl-end footer-legal">
-                        <p style="text-align: right;"><sub style="font-weight: normal;color: rgb(107, 114, 128);">Website design by Artur Podsiadły<br /><a href="https://www.linkedin.com/in/artpods56/">artpods56@gmail.com</a></sub></p>
+                        <p style="text-align: right;"><sub style="font-weight:normal;color:rgb(107, 114, 128);">Website design by Artur Podsiadły<br><a href="https://www.linkedin.com/in/artpods56/">artpods56@gmail.com</a></sub></p>
                     </div>
                 </div>
             </div>

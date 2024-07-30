@@ -1,0 +1,47 @@
+footer {
+  background-color: var(--bs-body-bg);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 55px 50px;
+  bottom: 0;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.page-footer .region img {
+  height: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol li, ul li {
+  list-style: none;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 1rem 0;
+  color: var(--bs-black);
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: .25;
+}
+
+a {
+  color: var(--tedx-red);
+}
+

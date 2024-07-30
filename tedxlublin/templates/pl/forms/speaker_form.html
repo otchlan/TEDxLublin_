@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="/assets/css/animation.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/footer-pl.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
@@ -36,38 +36,38 @@
         <div class="bg bg-reverse bg2"></div>
         <div class="w-100 h-100 dimmer"></div>
     </div>
-    <div class="overlay"></div><nav class="navbar navbar-expand-lg fixed-top bg-body shadow">
-    <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="../index.html"><img src="/assets/img/logo-black.png" /></a>
-        <div class="collapse navbar-collapse" style="font-weight: bold;">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="../accelerate.html">DUPA</a></li>
-                <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href="../team.html">TEAM</a></li>
-                <li class="nav-item"><a class="nav-link" href="../partners.html">PARTNERS</a></li>
-                <li class="nav-item"><a class="nav-link active" href="../contact.html">CONTACT</a></li>
-                <li class="nav-item"><a id="tickets-btn-1" class="nav-link rounded" href="../tickets.html" style="border-radius: 0.5rem;">TICKETS</a></li>
-            </ul>
+    <div class="overlay"></div>
+    <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
+        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-black.png"></a>
+            <div class="collapse navbar-collapse" style="font-weight:bold;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                    <li class="nav-item"><a class="nav-link rounded" id="tickets-btn" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <div class="dismiss"><i class="fas fa-caret-left"></i></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <nav class="navbar navbar-expand navbar-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav flex-column me-auto">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
         </div>
-        <div class="sidebar">
-            <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-            <div class="brand"><a href="../index.html"><img src="/assets/img/logo-white-accelerate.png" width="100%" /></a></div>
-            <nav class="navbar navbar-expand navbar-dark">
-                <div class="container-fluid">
-                    <ul class="navbar-nav flex-column me-auto">
-                        <li class="nav-item"><a class="nav-link" href="../accelerate.html">ACCELERATE</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../about.html">ABOUT</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../team.html">TEAM</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../partners.html">PARTNERS</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../contact.html">CONTACT</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../tickets.html">TICKETS</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div><button class="btn btn-primary d-flex d-lg-none open-menu sidebar-btn position-fixed" type="button"><i class="fa fa-navicon"></i></button>
-    </div>
-</nav>
-    <section class="newsletter-subscribe p-3 py-xl-5 baner"></section>
-    <section class="py-4 py-xl-5"></section>
+    </nav>
+    <section class="newsletter-subscribe p-3 py-xl-5 baner" style="background: url(&quot;/assets/img/arrows_accelerate_white_baner.png&quot;) right / auto no-repeat;"></section>
     <section class="bg-light shadow-lg py-5">
         <div class="container">
             <div class="border rounded border-0 border-dark overflow-hidden bg-secondary">
@@ -138,36 +138,39 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col">
-                    <div class="region"><a href="#"><img class="m-1" src="/assets/img/logo-black.png"></a></div>
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logo-black.png"></a></div>
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-6 col-md-3">
+                <div class="col col-12 col-md-6 col-lg-3">
                     <h5 class="text-uppercase mb-3">Accelerate 2024</h5>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted text-decoration-none" href="#">Speakers</a></li>
-                        <li><a class="text-muted text-decoration-none" href="#">Agenda</a></li>
-                        <li><a class="text-muted text-decoration-none" href="#">Partners</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'event' lang='pl' %}">Wydarzenie</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'tickets' lang='pl' %}">Bilety</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'partners' lang='pl' %}">Partnerzy</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3">
-                    <h5 class="text-uppercase mb-3">Event</h5>
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">informacje</h5>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted text-decoration-none" href="#">About</a></li>
-                        <li><a class="text-muted text-decoration-none" href="#">Attend</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'about' lang='pl' %}">Idea</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'team' lang='pl' %}">Zespół</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact' lang='pl' %}">Kontakt</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3">
-                    <h5 class="text-uppercase mb-3">Join Us</h5>
+                <div class="col col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">dołącz</h5>
                     <ul class="list-unstyled">
-                        <li><a class="text-muted text-decoration-none" href="#">Volunteers</a></li>
-                        <li><a class="text-muted text-decoration-none" href="#">Speakers</a></li>
-                        <li><a class="text-muted text-decoration-none" href="#">Partners</a></li>
+                        <li class="{% url 'event' lang='pl' %}"><a class="text-muted text-decoration-none" href="{% url 'contact_speakers' lang='pl' %}">Prelegenci</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact_partners' lang='pl' %}">Partnerzy</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact_volunteers' lang='pl' %}">Wolontariusze</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3">
-                    <h5 class="text-uppercase mb-3">Follow Us</h5>
-                    <div class="d-flex gap-3"><a href="#" class="text-muted"><i class="fab fa-facebook-f fa-lg"></i></a><a href="#" class="text-muted"><i class="fab fa-twitter fa-lg"></i></a><a href="#" class="text-muted"><i class="fab fa-linkedin-in fa-lg"></i></a><a href="#" class="text-muted"><i class="fab fa-github fa-lg"></i></a></div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">bądź na bieżąco</h5>
+                    <div class="d-flex gap-3"><a class="text-muted" href="https://www.facebook.com/TEDxLublin"><i class="fab fa-facebook-f fa-lg"></i></a><a class="text-muted" href="https://www.instagram.com/tedxlublin/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram fa-lg">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                            </svg></a><a class="text-muted" href="https://www.linkedin.com/company/tedxlublin"><i class="fab fa-linkedin-in fa-lg"></i></a></div>
                 </div>
             </div>
             <div class="row">
@@ -175,45 +178,25 @@
                     <div class="footer-legal"></div>
                 </div>
             </div>
-            <hr>
+            <hr class="mx-auto w-10 mb-5 mb-xl-9 border-dark-subtle">
             <div class="row">
-                <div class="col">
+                <div class="col col-6 col-xs-6 col-lg-4">
                     <div class="footer-legal">
-                        <p><br><span style="font-weight: normal !important; color: rgb(107, 114, 128);">@ 2024 - TEDxLublin. All rights reserved</span><br><br></p>
+                        <p><sub style="font-weight:normal;color:rgb(107, 114, 128);">@ 2024 - TEDxLublin. Wszystkie prawa zastrzeżone.</sub></p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-6 col-xs-6 col-lg-4">
                     <div class="footer-legal">
-                        <p><br><span style="font-weight: normal !important; color: rgb(107, 114, 128);">This independent TEDx event is operated under license from TED</span><br><br><br></p>
+                        <p><sub style="font-weight:normal;color:rgb(107, 114, 128);">To niezależne wydarzenie TEDx jest organizowane na licencji TED</sub></p>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4">
+                    <div class="d-xxl-flex justify-content-xxl-end footer-legal">
+                        <p style="text-align: right;"><sub style="font-weight:normal;color:rgb(107, 114, 128);">Website design by Artur Podsiadły<br><a href="https://www.linkedin.com/in/artpods56/">artpods56@gmail.com</a></sub></p>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 footer-navigation">
-                    <h3><a href="#">Company<span>logo </span></a></h3>
-                    <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-                    <p class="company-name">Company Name © 2015 </p>
-                </div>
-                <div class="col-sm-6 col-md-4 footer-contacts">
-                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                        <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
-                    </div>
-                    <div><i class="fa fa-phone footer-contacts-icon"></i>
-                        <p class="footer-center-info email text-start"> +1 555 123456</p>
-                    </div>
-                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                        <p> <a href="#" target="_blank">support@company.com</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-about">
-                    <h4>About the company</h4>
-                    <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
-                    <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
-                </div>
-            </div>
-        </footer>
     </footer>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
