@@ -39,3 +39,6 @@ def partners(request, lang):
 
 def tickets(request, lang):
     return render(request, f'{lang}/tickets.html')
+
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)
