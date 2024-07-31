@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="pl" data-bss-forced-theme="light">
+
+<head>
+    <meta charset="utf-8">
+{% load static %}
+	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TEDxLublin 2024: ACCELERATE</title>
+    <link rel="canonical" href="https://www.tedxlublin.live/templates/pl/faq.html">
+    <meta property="og:url" content="https://www.tedxlublin.live/templates/pl/faq.html">
+    <meta property="og:image" content="https://www.tedxlublin.live/assets/img/event_baners_horizontal/baner_white_v2.webp">
+    <meta name="" content="">
+    <meta name="description" content="Dołącz do nas na TEDxLublin 2024, gdzie motywem przewodnim jest &quot;ACCELERATE&quot;. Odkryj, jak przyspieszać zmiany w technologii, społeczeństwie i środowisku. Inspirujące wystąpienia, wizjonerscy mówcy i unikalne doświadczenia czekają na Ciebie 7 września w Lublinie. Zarezerwuj swoje miejsce już dziś!">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/Helvetica.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="/assets/css/animation.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/footer-pl.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="bg"></div>
+        <div class="bg bg-reverse"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg-reverse bg2"></div>
+        <div class="w-100 h-100 dimmer"></div>
+    </div>
+    <div class="overlay"></div>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body shadow">
+        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-black.png"></a>
+            <div class="collapse navbar-collapse" style="font-weight:bold;">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                    <li class="nav-item"><a class="nav-link rounded" href="{% url 'tickets' lang='pl' %}" id="tickets-btn" style="border-radius:0.5rem;">BILETY</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <div class="dismiss"><i class="fas fa-caret-left"></i></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logo-white-accelerate.png" width="100%"></a></div>
+                <nav class="navbar navbar-expand navbar-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav flex-column me-auto">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">WYDARZENIE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div><button class="btn btn-primary d-flex d-lg-none open-menu sidebar-btn position-fixed" type="button"><i class="fa fa-navicon"></i></button>
+        </div>
+    </nav>
+    <section class="bg-light py-3 py-md-5" style="padding-top: 65px;">
+        <div class="container">
+            <div class="row gy-5 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-6"><img class="rounded img-fluid" src="/assets/img/event_baners_vertical/baner_transparent_black_font.webp" alt="How can we help you?"></div>
+                <div class="col-12 col-lg-6">
+                    <div class="row justify-content-xl-end">
+                        <div class="col-12 col-xl-11">
+                            <h2 class="h1 mb-3">Masz jakieś pytania?</h2>
+                            <p class="lead fs-4 text-secondary mb-5">Przygotowaliśmy tę listę pytań i odpowiedzi aby pomóc ci odpowiedzieć na najważniejsze pytania.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto w-50 my-4 border-dark-subtle">
+        <div class="container" style="padding-top:40px;padding-bottom:40px;">
+            <div class="container">
+                <div class="panel-group" id="accordion">
+                    <div class="faqHeader"><span>OGÓLNE</span></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a></h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body"><span>Account registration at</span><strong>PrepBootstrap</strong><span>is only required if you will be selling or buying themes. This ensures a valid communication channel for all parties involved in any transactions.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Can I submit my own Bootstrap templates or themes?</a></h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse">
+                            <div class="panel-body"><span>A lot of the content of the site has been submitted by the community. Whether it is a commercial element/template/theme or a free one, you are encouraged to contribute. All credits are published along with the resources.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">What is the currency used for all transactions?</a></h4>
+                        </div>
+                        <div id="collapseEleven" class="panel-collapse collapse">
+                            <div class="panel-body"><span>All prices for themes, templates and other items, including each seller's or buyer's account balance are in</span><strong>USD</strong></div>
+                        </div>
+                    </div>
+                    <div class="faqHeader"><span>WYDARZENIE</span></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Who cen sell items?</a></h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Any registed user, who presents a work, which is genuine and appealing, can post it on</span><strong>PrepBootstrap</strong><span>.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">I want to sell my items - what are the steps?</a></h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body"><span>The steps involved in this process are really simple. All you need to do is: </span>
+                                <ul>
+                                    <li>Register an account</li>
+                                    <li>Activate your account</li>
+                                    <li>Go to the<strong>Themes</strong>section and upload your theme</li>
+                                    <li>The next step is the approval step, which usually takes about 72 hours.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How much do I get from each sale?</a></h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Here, at</span><strong>PrepBootstrap</strong><span>, we offer a great, 70% rate for each seller, regardless of any restrictions, such as volume, date of entry, etc. </span><br></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Why sell my items here?</a></h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse">
+                            <div class="panel-body"><span>There are a number of reasons why you should join us: </span>
+                                <ul>
+                                    <li>A great 70% flat rate for your items.</li>
+                                    <li>Fast response/approval times. Many sites take weeks to process a theme or template. And if it gets rejected, there is another iteration. We have aliminated this, and made the process very fast. It only takes up to 72 hours for a template/theme to get reviewed.</li>
+                                    <li>We are not an exclusive marketplace. This means that you can sell your items on<strong>PrepBootstrap</strong>, as well as on any other marketplate, and thus increase your earning potential.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">What are the payment options?</a></h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse">
+                            <div class="panel-body"><span>The best way to transfer funds is via Paypal. This secure platform ensures timely payments and a secure environment.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">When do I get paid?</a></h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Our standard payment plan provides for monthly payments. At the end of each month, all accumulated funds are transfered to your account. The minimum amount of your balance should be at least 70 USD.</span></div>
+                        </div>
+                    </div>
+                    <div class="faqHeader"><span>UCZESTNICY</span></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">I want to buy a theme - what are the steps?</a></h4>
+                        </div>
+                        <div id="collapseFour-1" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Buying a theme on</span><strong>PrepBootstrap</strong><span>is really simple. Each theme has a live preview. Once you have selected a theme or template, which is to your liking, you can quickly and securely pay via Paypal. </span><br><span>Once the transaction is complete, you gain full access to the purchased product.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Is this the latest version of an item</a></h4>
+                        </div>
+                        <div id="collapseSeven-1" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Each item in</span><strong>PrepBootstrap</strong><span>is maintained to its latest version. This ensures its smooth operation.</span></div>
+                        </div>
+                    </div>
+                    <div class="faqHeader"><span>PRELEGENCI</span></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">I want to buy a theme - what are the steps?</a></h4>
+                        </div>
+                        <div id="collapseFour-2" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Buying a theme on</span><strong>PrepBootstrap</strong><span>is really simple. Each theme has a live preview. Once you have selected a theme or template, which is to your liking, you can quickly and securely pay via Paypal. </span><br><span>Once the transaction is complete, you gain full access to the purchased product.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Is this the latest version of an item</a></h4>
+                        </div>
+                        <div id="collapseSeven-2" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Each item in</span><strong>PrepBootstrap</strong><span>is maintained to its latest version. This ensures its smooth operation.</span></div>
+                        </div>
+                    </div>
+                    <div class="faqHeader"><span>PARTNERZY</span></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">I want to buy a theme - what are the steps?</a></h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Buying a theme on</span><strong>PrepBootstrap</strong><span>is really simple. Each theme has a live preview. Once you have selected a theme or template, which is to your liking, you can quickly and securely pay via Paypal. </span><br><span>Once the transaction is complete, you gain full access to the purchased product.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Is this the latest version of an item</a></h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Each item in</span><strong>PrepBootstrap</strong><span>is maintained to its latest version. This ensures its smooth operation.</span></div>
+                        </div>
+                    </div>
+                    <div class="faqHeader"><span>WOLONTARIUSZE</span></div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">I want to buy a theme - what are the steps?</a></h4>
+                        </div>
+                        <div id="collapseFour-3" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Buying a theme on</span><strong>PrepBootstrap</strong><span>is really simple. Each theme has a live preview. Once you have selected a theme or template, which is to your liking, you can quickly and securely pay via Paypal. </span><br><span>Once the transaction is complete, you gain full access to the purchased product.</span></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Is this the latest version of an item</a></h4>
+                        </div>
+                        <div id="collapseSeven-3" class="panel-collapse collapse">
+                            <div class="panel-body"><span>Each item in</span><strong>PrepBootstrap</strong><span>is maintained to its latest version. This ensures its smooth operation.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container" style="background: url(&quot;/assets/img/accelerate-arrows.png&quot;) right/ contain no-repeat;">
+            <div class="row h-100">
+                <div class="col text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-md-center justify-content-xl-center py-5 col-12">
+                    <div style="max-width: 350px;">
+                        <h1 class="fw-bold">Nadal szukasz odpowiedzi?</h1>
+                        <p class="my-3">Napisz do nas a my się z tobą skontaktujemy!</p><a href="{% url 'contact' lang='pl' %}"><a class="btn btn-primary btn-lg me-2" role="button" href="#">KONTAKT</a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter-subscribe p-3 py-xl-5">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-8 col-xl-6 mx-auto text-white">
+                    <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
+                    <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
+                </div>
+            </div>
+            <form class="d-flex justify-content-center flex-wrap" method="post">
+                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="e-mail"></div>
+                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subskrybuj</button></div>
+            </form>
+        </div>
+    </section>
+    <footer class="shadow-lg page-footer p-3">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col">
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logo-black.png"></a></div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">Accelerate 2024</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted text-decoration-none" href="{% url 'event' lang='pl' %}">Wydarzenie</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'tickets' lang='pl' %}">Bilety</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'partners' lang='pl' %}">Partnerzy</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">informacje</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-muted text-decoration-none" href="{% url 'about' lang='pl' %}">Idea</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'team' lang='pl' %}">Zespół</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact' lang='pl' %}">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">dołącz</h5>
+                    <ul class="list-unstyled">
+                        <li class="{% url 'event' lang='pl' %}"><a class="text-muted text-decoration-none" href="{% url 'contact_speakers' lang='pl' %}">Prelegenci</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact_partners' lang='pl' %}">Partnerzy</a></li>
+                        <li><a class="text-muted text-decoration-none" href="{% url 'contact_volunteers' lang='pl' %}">Wolontariusze</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h5 class="text-uppercase mb-3">bądź na bieżąco</h5>
+                    <div class="d-flex gap-3"><a class="text-muted" href="https://www.facebook.com/TEDxLublin"><i class="fab fa-facebook-f fa-lg"></i></a><a class="text-muted" href="https://www.instagram.com/tedxlublin/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewbox="0 0 16 16" class="bi bi-instagram fa-lg"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path></svg></a><a class="text-muted" href="https://www.linkedin.com/company/tedxlublin"><i class="fab fa-linkedin-in fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-legal"></div>
+                </div>
+            </div>
+            <hr class="mx-auto w-10 mb-5 mb-xl-9 border-dark-subtle">
+            <div class="row">
+                <div class="col-6 col-lg-4 col-xs-6">
+                    <div class="footer-legal">
+                        <p><sub style="font-weight:normal;color:rgb(107, 114, 128);">@ 2024 - TEDxLublin. Wszystkie prawa zastrzeżone.</sub></p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-xs-6">
+                    <div class="footer-legal">
+                        <p><sub style="font-weight:normal;color:rgb(107, 114, 128);">To niezależne wydarzenie TEDx jest organizowane na licencji TED</sub></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="d-xxl-flex justify-content-xxl-end footer-legal">
+                        <p style="text-align:right;"><sub style="font-weight: normal;color: rgb(107, 114, 128);">Website design by Artur Podsiadły<br /><a href="https://www.linkedin.com/in/artpods56/" target="_blank">artpods56@gmail.com</a></sub></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/swiper.js"></script>
+    <script src="/assets/js/timer.js"></script>
+</body>
+
+</html>
