@@ -40,9 +40,6 @@
         <loc>https://www.tedxlublin.live/templates/pl/forms/volunteer_form.html</loc>
     </url>
     <url>
-        <loc>https://www.tedxlublin.live/templates/pl/404.html</loc>
-    </url>
-    <url>
         <loc>https://www.tedxlublin.live/templates/pl/about.html</loc>
     </url>
     <url>
@@ -50,6 +47,9 @@
     </url>
     <url>
         <loc>https://www.tedxlublin.live/templates/pl/contact.html</loc>
+    </url>
+    <url>
+        <loc>https://www.tedxlublin.live/templates/pl/faq.html</loc>
     </url>
     <url>
         <loc>https://www.tedxlublin.live/templates/pl/</loc>
@@ -62,5 +62,8 @@
     </url>
     <url>
         <loc>https://www.tedxlublin.live/templates/pl/tickets.html</loc>
+    </url>
+    <url>
+        <loc>https://www.tedxlublin.live/templates/404.html</loc>
     </url>
 </urlset>
