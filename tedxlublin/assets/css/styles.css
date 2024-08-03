@@ -46,7 +46,7 @@ body {
 }
 
 .profile-placeholder {
-  content: url("/assets/img/blank_profile_picture.webp");
+  content: url("blank_profile_picture.webp");
 }
 
 hr {
