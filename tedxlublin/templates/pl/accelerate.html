@@ -15,19 +15,11 @@
     <meta name="description" content="Dołącz do nas na TEDxLublin 2024, gdzie motywem przewodnim jest &quot;ACCELERATE&quot;. Odkryj, jak przyspieszać zmiany w technologii, społeczeństwie i środowisku. Inspirujące wystąpienia, wizjonerscy mówcy i unikalne doświadczenia czekają na Ciebie 7 września w Lublinie. Zarezerwuj swoje miejsce już dziś!">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/Helvetica.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="/assets/css/bs-theme-overrides.css">
-    <link rel="stylesheet" href="/assets/css/animation.css">
-    <link rel="stylesheet" href="/assets/css/faq.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/footer-pl.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body><div>
@@ -123,7 +115,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="text-center px-3">
-                                <h4>START SPRZEDAŻY BILETÓW EARLY BIRDS ZA</h4>
+                                <h4>DO WYDARZENIA POZOSTAŁO</h4>
                                 <div class="row text-black row-cols-5" id="countdown-1">
                                     <div class="col">
                                         <h2 id="months" class="timer-value">00</h2>
@@ -512,13 +504,13 @@
         <div class="container">
             <div class="row mb-2">
                 <div class="col-md-8 col-xl-6 mx-auto text-white">
-                    <h2 class="display-6 lead display-shadow">Subscribe to our newsletter</h2>
-                    <p class="display-shadow">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+                    <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
+                    <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
                 </div>
             </div>
             <form class="d-flex justify-content-center flex-wrap" method="post">
-                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="Your Email"></div>
-                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subscribe </button></div>
+                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="e-mail"></div>
+                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subskrybuj</button></div>
             </form>
         </div>
     </section>
@@ -585,14 +577,35 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer><script>
+    // Set the date we're counting down to (example: December 31, 2024 23:59:59)
+var countDownDate = new Date("September 7, 2024 13:00:00").getTime();
+
+// Update the countdown every 1 second
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.44));
+    var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("months").innerHTML = months.toString().padStart(2, '0');
+    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+
+}, 1000);
+</script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/sidebar.js"></script>
-    <script src="/assets/js/swiper.js"></script>
-    <script src="/assets/js/timer.js"></script>
+    <script src="/assets/js/script.min.js"></script>
 </body>
 
 </html>

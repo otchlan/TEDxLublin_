@@ -39,7 +39,7 @@
     <a href="https://www.ted.com/about"><strong>About TED »</strong></a>
     <br />
     <br />
-    <a href="https://tedxlublin.rocks">View Live</a>
+    <a href="https://tedxlublin.org">View Live</a>
     ·
     <a href="https://github.com/artpods56/tedxlublin/issues/new?assignees=&labels=&projects=&template=bug_report.md">Report Bug</a>
 
@@ -110,13 +110,16 @@ Github repository: [https://github.com/artpods56/tedxlublin](https://github.com/
 
 
 
+## Acknowledgments
+
+
+* [README Template](https://github.com/othneildrew/Best-README-Template/)
+* [Shields.io](https://shields.io)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [stars-shield]: https://img.shields.io/github/stars/artpods56/tedxlublin.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[stars-url]: https://github.com/artpods56/tedxlublin/stargazers
 [license-shield]: https://img.shields.io/github/license/artpods56/tedxlublin.svg?style=for-the-badge
 [license-url]: https://github.com/artpods56/tedxlublin/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

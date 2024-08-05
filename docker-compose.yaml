@@ -11,9 +11,8 @@ services:
     env_file:
       - ./.env.dev
     container_name: www
-    
     environment:
-      DEBUG: "1"
+      - APP_ENV=dev
     restart: always
     volumes:
       - type: bind

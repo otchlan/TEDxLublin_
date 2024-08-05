@@ -11,11 +11,22 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
+import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
+env = environ.Env()
+
+APP_ENV = os.environ.get("APP_ENV", "prod")
+
+env.read_env(os.path.join(BASE_DIR, f".env.{APP_ENV}"))
+
+
+DEBUG = env.bool("DEBUG", default=False)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -23,8 +34,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--^tv(*u68ea8#a%o*oqj2=b!d5=a%+5o)5bm5w-2_lap-s#62j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
-DEBUG = os.environ.get('DEBUG').lower() == 'true'
 
 # DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
