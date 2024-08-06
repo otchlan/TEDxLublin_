@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+#tedxlublin/urls.py
+>>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)
 """
 URL configuration for tedxlublin project.
 
@@ -15,6 +19,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< HEAD
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
@@ -28,3 +33,19 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('<str:lang>/', include('webapp.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+from django.urls import path, include, re_path
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
+from webapp import views
+
+urlpatterns = [
+    path('', RedirectView.as_view(url='/pl/', permanent=True), name='root'),  # Redirects to English by default
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
+    path('admin/', admin.site.urls),
+    path('<str:lang>/', include('webapp.urls')),
+    path('<lang>/subscribe/', views.subscribeNewsletter, name='subscribeNewsletter'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+>>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)

@@ -145,3 +145,10 @@ MEDIA_URL = '/media/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+<<<<<<< HEAD
+=======
+
+AIRTABLE_API_KEY = 'patqyz49SOXPhPj2H.2b1aaccbd08b61c1caf5211162002bde0f0dd4cc8f2c0399fbb22bbe61ef99fe'
+AIRTABLE_BASE_ID = 'appcnnQTAoOmJUuMX'
+AIRTABLE_TABLE_NAME = 'Table1'
+>>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)

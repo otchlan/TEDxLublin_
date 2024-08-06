@@ -1,3 +1,8 @@
 django
 gunicorn
+<<<<<<< HEAD
 django-environ
+=======
+django-environ
+airtable-python-wrapper
+>>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)

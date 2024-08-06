@@ -257,3 +257,12 @@ transparent-btn {
   font-size: 0.9rem;
 }
 
+<<<<<<< HEAD
+=======
+.response-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: green; /* You can change this color to your preference */
+    margin-top: 20px;
+}
+>>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)

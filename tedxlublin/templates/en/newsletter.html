@@ -1,3 +1,4 @@
+<!--game.html !-->
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="pl">
 
@@ -8,20 +9,13 @@
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>TEDxLublin 2024: ACCELERATE</title>
-    <link rel="canonical" href="https://www.tedxlublin.live/templates/pl/partners.html">
-    <meta property="og:url" content="https://www.tedxlublin.live/templates/pl/partners.html">
+    <link rel="canonical" href="https://www.tedxlublin.live/templates/pl/tickets.html">
+    <meta property="og:url" content="https://www.tedxlublin.live/templates/pl/tickets.html">
     <meta property="og:image" content="https://www.tedxlublin.live/assets/img/event_baners_horizontal/baner_white_v2.webp">
     <meta name="" content="">
     <meta name="description" content="Dołącz do nas na TEDxLublin 2024, gdzie motywem przewodnim jest &quot;ACCELERATE&quot;. Odkryj, jak przyspieszać zmiany w technologii, społeczeństwie i środowisku. Inspirujące wystąpienia, wizjonerscy mówcy i unikalne doświadczenia czekają na Ciebie 7 września w Lublinie. Zarezerwuj swoje miejsce już dziś!">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-=======
     <link rel="stylesheet" href="/assets/css/Helvetica.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
@@ -35,7 +29,6 @@
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/Simple-Slider-swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
->>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)
 </head>
 
 <body>
@@ -54,13 +47,10 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
-                    <li class="nav-item"><a class="nav-link rounded" id="tickets-btn" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
-<<<<<<< HEAD
-=======
-                    <li class="nav-item"><a class="nav-link" href="{% url 'game' lang='pl' %}">🕹️</a></li>
->>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)
+                    <li class="nav-item"><a class="nav-link" id="tickets-btn" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
+                    <li class="nav-item"><a class="nav-link rounded active" href="{% url 'game' lang='pl' %}" >🕹️</a></li>
                 </ul>
             </div>
             <div class="sidebar">
@@ -72,48 +62,112 @@
                             <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
-<<<<<<< HEAD
-=======
-                            <li class="nav-item"><a class="nav-link" href="{% url 'game' lang='pl' %}">🕹️</a></li>
->>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)
+                            <li class="nav-item"><a class="nav-link active" href="{% url 'game' lang='pl' %}">🕹️</a></li>
                         </ul>
                     </div>
                 </nav>
             </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
         </div>
     </nav>
-    <section class="mt-5">
-        <div class="py-5 d-flex justify-content-center"><img id="baner-image"></div>
-    </section>
-    <section class="py-3 py-md-5 py-xl-8 shadow-lg bg-light">
+    <section class="bg-light" style="padding-top: 65px;">
         <div class="container">
-            <div class="row justify-content-md-center pt-2">
-                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                    <p class="text-uppercase text-center text-secondary mb-2 mx-4">przy tworzeniu wydarzenia wsparli nas nasi</p>
-                    <h2 class="text-uppercase fw-bold mb-3 text-center">partnerzy i sponsorzy</h2>
-                    <hr class="mx-auto w-50 mb-5 mb-xl-9 border-dark-subtle">
-                </div>
+            <div class="row justify-content-md-center my-3">
+
             </div>
         </div>
-        <div class="container overflow-hidden">
-            <div class="row gy-4">
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/nancy_accessories.png" width="100%"></div>
+       <div class="pb-5 d-flex justify-content-center">
+           <img id="qr-image" src="{% static 'img/game/qr.png' %}" alt="QR Code">
+       </div>
+       <div class="pb-5 d-flex justify-content-center">
+        <div>Na naszej stronie generowany jest unikatowy QR code żeby użytkownicy/uczestnicy gry chodzili i pokazywali innym qr kody, a tamci dostają swój QR wygrywa ta osoba, która ma najwięcej zeskanowanych i zarejestrowanych osób.</dic>
+        <div>Trzebaby jeszcze pomyśleć nad różnymi strategiami dla gier</div>
+
+       </div>
+    </section>
+    
+    <section>
+        <div class="container py-4 py-xl-5">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 d-xl-flex">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold card-subtitle"></h4>
+                            <h4 class="display-5 fw-bold card-title">W tych miejscach można wrzucić jakieś rodzaje zadań lub coś takiego</h4>
+                            <a class="btn btn-light d-block w-100" role="button" href="#">Button</a>
+                        </div>
+                    </div>
+                    <div class="bg-body-tertiary border rounded border-0 p-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Lectus ut nibh quam, felis porttitor.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Ante nec venenatis etiam lacinia.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Porta suscipit netus ad ac.</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/look_as_photographer.png" width="100%"></div>
+                <div class="col">
+                    <div class="card border-primary border-2 mb-4">
+                        <div class="card-body text-center p-4"><span class="badge rounded-pill bg-primary position-absolute top-0 start-50 translate-middle text-uppercase">accelerate</span>
+                            <h4 class="fw-bold card-subtitle">STANDARD</h4>
+                            <h4 class="display-5 fw-bold card-title">249zł</h4>
+                            <p>Varius rutrum duis vel.</p><a class="btn btn-primary d-block w-100" role="button" href="#">Button</a>
+                        </div>
+                    </div>
+                    <div class="bg-body-tertiary border rounded border-0 p-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Lectus ut nibh quam, felis porttitor.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Ante nec venenatis etiam lacinia.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Porta suscipit netus ad ac.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Morbi praesent aptent integer at.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/jz.png" width="100%"></div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/lublin_game_spot.png" width="100%"></div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/mtrojanowska.png" width="100%"></div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold card-subtitle">VIP</h4>
+                            <h4 class="display-5 fw-bold card-title">449zł</h4>
+                            <p>Et lacinia fringilla massa.</p><a class="btn btn-dark d-block w-100" role="button" href="#">Button</a>
+                        </div>
+                    </div>
+                    <div class="bg-body-tertiary border rounded border-0 p-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Lectus ut nibh quam, felis porttitor.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Ante nec venenatis etiam lacinia.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Porta suscipit netus ad ac.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Morbi praesent aptent integer at.</span></li>
+                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
+                                    </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,13 +254,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<<<<<<< HEAD
-    <script src="/assets/js/script.min.js"></script>
-=======
     <script src="/assets/js/sidebar.js"></script>
     <script src="/assets/js/swiper.js"></script>
     <script src="/assets/js/timer.js"></script>
->>>>>>> 4d329a1 (Dodane podstrony /newsletter /game m.in.)
 </body>
 
 </html>
