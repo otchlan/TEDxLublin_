@@ -31,7 +31,7 @@
 </div>
     <div class="overlay"></div>
     <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
-        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/logo-black.png"></a>
+        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-black.png"></a>
             <div class="collapse navbar-collapse" style="font-weight:bold;">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
@@ -44,7 +44,7 @@
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
@@ -73,7 +73,7 @@
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
                 <div class="col">
                     <div class="d-flex">
-                        <div class="px-3"><img class="pb-3" src="/assets/img/logos/logo-black-accelerate.png" style="width: 100%;">
+                        <div class="px-3"><img class="pb-3" src="/assets/img/logos/tedxlublin/logo-black-accelerate.png" style="width: 100%;">
                             <p>Dołącz do nas podczas tegorocznej edycji, nie może cie zabraknąć!</p><a href="{% url 'about' lang='pl' %}">Dowiedz się więcej o TED&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>
@@ -399,6 +399,18 @@
             </div>
         </div>
     </section>
+    <section class="p-3 py-xl-5 bg-light">
+        <div class="container">
+            <div class="row px-3">
+                <div class="col col-12">
+                    <div class="w-100">
+                        <h2 class="fw-bold">BILETY</h2><p>Sprzedaż biletów odbywa się za pośrednictwem platformy <a href="https://app.evenea.pl/event/tedxlublin2024/" target="_blank">evenea</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-white rounded shadow-sm"><iframe id="ticket-iframe" src="{% url 'tickets_iframe'%}" width="100%" scrolling="no" class="rounded" frameborder="0"></iframe></div>
+    </section>
     <section class="py-3 py-md-5 py-xl-8 shadow-lg bg-light">
         <div class="container">
             <div class="row justify-content-md-center pt-2">
@@ -412,19 +424,37 @@
         <div class="container overflow-hidden">
             <div class="row gy-4">
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/nancy_accessories.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/nancy_accessories.png" width="100%"></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/look_as_photographer.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/look_as_photographer.png" width="100%"></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/jz.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/jz.png" width="100%"></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/lublin_game_spot.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/lublin_game_spot.png" width="100%"></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/photos/sponsors/accelerate_2024/mtrojanowska.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/mtrojanowska.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/avalon.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/baobab.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/bizitok.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pizzalover.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pcsi.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/homofaber.png" width="100%"></div>
                 </div>
             </div>
         </div>
@@ -518,7 +548,7 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col">
-                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/logo-black.png"></a></div>
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png"></a></div>
                 </div>
             </div>
             <div class="row g-4">
