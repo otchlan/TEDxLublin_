@@ -1,5 +1,14 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django.views.decorators.clickjacking import xframe_options_exempt
+import logging
 
+import requests
+import re
+
+logger = logging.getLogger( __name__ )
+logger.setLevel(logging.DEBUG)
+logger.debug("Loaded views logger")
 
 def index(request, lang):
     return render(request, f'{lang}/index.html')
@@ -38,7 +47,39 @@ def partners(request, lang):
 
 
 def tickets(request, lang):
+    logger.debug("Tickets view")
     return render(request, f'{lang}/tickets.html')
+
+@xframe_options_exempt
+def tickets_iframe(request):
+    url = "https://app.evenea.pl/event/tedxlublin2024/?out=1&source=organizer_frame"
+    response = requests.get(url)
+    logger.debug(f"Response status code: {response.status_code}")
+    
+    if response.status_code == 200:
+        content = response.text
+        
+        # Define your custom CSS
+        custom_css = '''
+        .well {
+            background-color: #FBFBFB !important;
+        }
+        
+        .ticket-header {
+            background-color: #eb0028 !important;
+        }
+        
+    '''
+        # new_href = '/assets/bootstrap/css/bootstrap.min.css'
+        # Regex pattern to find the specific <link> tag with href containing 'main.css'
+        # main_css_pattern = r'(<link\s+[^>]*href="https:\/\/app[^"]*main\.css")([^>]*>)'
+        
+        # Replace the href attribute with the new href link
+        # modified_content = re.sub(main_css_pattern, rf'\1{new_href}\2', content)
+        modified_content = content.replace('</body>', f'<style>{custom_css}</style></body>')
+        return HttpResponse(modified_content)
+    else:
+        return HttpResponse('Error fetching the content', status=response.status_code)
 
 def faq(request, lang):
     return render(request, f'{lang}/faq.html')
