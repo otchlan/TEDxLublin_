@@ -32,7 +32,7 @@
     </div>
     <div class="overlay"></div>
     <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
-        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/logo-black.png"></a>
+        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-black.png"></a>
             <div class="collapse navbar-collapse" style="font-weight:bold;">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATE</a></li>
@@ -45,7 +45,7 @@
             </div>
             <div class="sidebar">
                 <div class="dismiss"><i class="fas fa-caret-left"></i></div>
-                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logos/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
@@ -73,117 +73,73 @@
         </div>
         <div class="pb-5 d-flex justify-content-center"><img id="index-event-img"></div>
     </section>
-    <section class="bg-light shadow-lg">
-        <div class="container py-4 py-xl-5">
-            <div class="text-center border rounded border-0 p-3 text-white bg-primary">
-                <div class="row row-cols-2 row-cols-md-4">
-                    <div class="col">
-                        <div class="py-3">
-                            <h4 class="display-5 fw-bold text-white mb-0">1</h4>
-                            <p class="mb-0">MOTYW</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="py-3">
-                            <h4 class="display-5 fw-bold text-white mb-0">10</h4>
-                            <p class="mb-0">PRELEGENTÓW</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="py-3">
-                            <h4 class="display-5 fw-bold text-white mb-0">100</h4>
-                            <p class="mb-0">SŁUCHACZY</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="py-3">
-                            <h4 class="display-5 fw-bold text-white mb-0">MAX</h4>
-                            <p class="mb-0">PRZYSPIESZENIE</p>
-                        </div>
+    <section class="p-3 py-xl-5 bg-light">
+        <div class="container">
+            <div class="row px-3">
+                <div class="col col-12">
+                    <div class="w-100">
+                        <h2 class="fw-bold">BILETY</h2><p>Sprzedaż biletów odbywa się za pośrednictwem platformy <a href="https://app.evenea.pl/event/tedxlublin2024/" target="_blank">evenea</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container bg-white rounded shadow-sm"><iframe id="ticket-iframe" src="{% url 'tickets_iframe'%}" width="100%" scrolling="no" class="rounded" frameborder="0"></iframe></div>
     </section>
-    <section>
-        <div class="container py-4 py-xl-5">
-            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 d-xl-flex">
-                <div class="col">
-                    <div class="card mb-4">
-                        <div class="card-body text-center p-4">
-                            <h4 class="fw-bold card-subtitle">EARLY BIRD</h4>
-                            <h4 class="display-5 fw-bold card-title">199zł</h4>
-                            <p>Non vulputate feugiat semper.</p><a class="btn btn-light d-block w-100" role="button" href="#">Button</a>
-                        </div>
-                    </div>
-                    <div class="bg-body-tertiary border rounded border-0 p-4">
-                        <ul class="list-unstyled">
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Lectus ut nibh quam, felis porttitor.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Ante nec venenatis etiam lacinia.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Porta suscipit netus ad ac.</span></li>
-                        </ul>
-                    </div>
+    <section class="py-3 py-md-5 py-xl-8 shadow-lg bg-light">
+        <div class="container">
+            <div class="row justify-content-md-center pt-2">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h2 class="text-uppercase fs-6 text-center text-secondary mb-2">przy tworzeniu wydarzenia wsparli nas nasi</h2>
+                    <h2 class="text-uppercase fw-bold mb-3 text-center">partnerzy i sponsorzy</h2>
+                    <hr class="mx-auto w-50 mb-5 mb-xl-9 border-dark-subtle">
                 </div>
-                <div class="col">
-                    <div class="card border-primary border-2 mb-4">
-                        <div class="card-body text-center p-4"><span class="badge rounded-pill bg-primary position-absolute top-0 start-50 translate-middle text-uppercase">accelerate</span>
-                            <h4 class="fw-bold card-subtitle">STANDARD</h4>
-                            <h4 class="display-5 fw-bold card-title">249zł</h4>
-                            <p>Varius rutrum duis vel.</p><a class="btn btn-primary d-block w-100" role="button" href="#">Button</a>
-                        </div>
-                    </div>
-                    <div class="bg-body-tertiary border rounded border-0 p-4">
-                        <ul class="list-unstyled">
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Lectus ut nibh quam, felis porttitor.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Ante nec venenatis etiam lacinia.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Porta suscipit netus ad ac.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Morbi praesent aptent integer at.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
-                        </ul>
-                    </div>
+            </div>
+        </div>
+        <div class="container overflow-hidden">
+            <div class="row gy-4">
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/nancy_accessories.png" width="100%"></div>
                 </div>
-                <div class="col">
-                    <div class="card mb-4">
-                        <div class="card-body text-center p-4">
-                            <h4 class="fw-bold card-subtitle">VIP</h4>
-                            <h4 class="display-5 fw-bold card-title">449zł</h4>
-                            <p>Et lacinia fringilla massa.</p><a class="btn btn-dark d-block w-100" role="button" href="#">Button</a>
-                        </div>
-                    </div>
-                    <div class="bg-body-tertiary border rounded border-0 p-4">
-                        <ul class="list-unstyled">
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Lectus ut nibh quam, felis porttitor.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Ante nec venenatis etiam lacinia.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Porta suscipit netus ad ac.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Morbi praesent aptent integer at.</span></li>
-                            <li class="d-flex mb-2"><span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
-                                    </svg></span><span>Nisl potenti ut auctor lobortis.</span></li>
-                        </ul>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/look_as_photographer.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/jz.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/lublin_game_spot.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/mtrojanowska.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/avalon.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/baobab.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/bizitok.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pizzalover.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pcsi.png" width="100%"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 text-center">
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/homofaber.png" width="100%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container" style="background: url(&quot;accelerate-arrows.png&quot;) right/ contain no-repeat;">
+            <div class="row h-100">
+                <div class="col text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-md-center justify-content-xl-center py-5 col-12">
+                    <div style="max-width: 350px;">
+                        <h1 class="fw-bold">Gotowy na przyspieszenie z&nbsp;<span style="color:var(--tedx-red);">TEDx</span>?</h1>
+                        <p class="my-3">Sprzedaż biletów rozpoczyna się już w krótce, sprawdź najważniejsze informacje dotyczące wydarzenia.</p><a href="{% url 'event' lang='pl' %}"><a class="btn btn-primary btn-lg me-2" role="button" href="#">ACCELERATE</a></a><a href="#"><a class="btn btn-outline-primary btn-lg" role="button" href="#">FAQ</a></a>
                     </div>
                 </div>
             </div>
@@ -207,7 +163,7 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col">
-                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/logo-black.png"></a></div>
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png"></a></div>
                 </div>
             </div>
             <div class="row g-4">

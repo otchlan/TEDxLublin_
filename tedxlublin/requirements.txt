@@ -1,3 +1,6 @@
 django
 gunicorn
 django-environ
+requests
+beautifulsoup4
+psycopg2-binary
