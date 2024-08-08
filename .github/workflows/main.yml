@@ -5,6 +5,7 @@ on: workflow_dispatch
 jobs:
   display-secret:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - name: Echo the Secret
         run: echo "The secret is ${{ secrets.MY_SECRET }}"
