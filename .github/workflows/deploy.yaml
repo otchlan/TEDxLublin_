@@ -1,0 +1,39 @@
+name: Deploy website on production server
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to DigitalOcean droplet
+      env:
+        DO_HOST_IP: ${{ secrets.DO_HOST_IP }}
+        DO_HOST_USERNAME: ${{ secrets.DO_HOST_USERNAME }}
+        DO_HOST_PASSWORD: ${{ secrets.DO_HOST_PASSWORD }}
+        ENV_PROD: ${{ secrets.ENV_PROD }}
+      run: |
+        apt-get update && apt-get install -y openssh-client
+        
+        mkdir -p ~/.ssh
+        ssh-keyscan -H "$DO_HOST_IP" >> ~/.ssh/known_hosts
+        sshpass -p "$DO_HOST_PASSWORD" ssh $DO_HOST_USERNAME@$DO_HOST_IP << EOF
+
+        cd /home/project/tedxlublin
+        
+        echo "$ENV_PROD" | base64 --decode > .env.prod
+        
+        docker compose -f down
+        
+        git pull origin main
+        
+        docker compose --file docker-compose.prod.yml up --build
+        EOF
