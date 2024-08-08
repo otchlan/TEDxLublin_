@@ -5,6 +5,6 @@ class RedirectMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
-        if not request.path.startswith('/pl/') and request.path != '/pl':
-            return HttpResponseRedirect('/pl' + request.path)
+        if request.path == '/':
+            return HttpResponseRedirect('/pl')
         return self.get_response(request)
