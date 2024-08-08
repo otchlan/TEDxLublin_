@@ -1,0 +1,10 @@
+name: Echo Secret Variable
+
+on: [push]
+
+jobs:
+  display-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo the Secret
+        run: echo "The secret is ${{ secrets.MY_SECRET }}"
