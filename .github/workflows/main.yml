@@ -1,18 +1,11 @@
 name: Echo Secret Variable
 
-on: [push]
+on:
+  workflow-dispatch
 
 jobs:
   display-secret:
     runs-on: ubuntu-latest
     steps:
-      - name: Set env as secret
-        env:
-          MY_VAL: ${{ secrets.MY_SECRET }}
-        run: |
-          import os
-          data = open("file", "w")
-          for q in (os.getenv("MY_VAL")):
-            print(q)
-            data.write(q)
-        shell: python
+      - name: Echo the Secret
+        run: echo "The secret is ${{ secrets.MY_SECRET }}"
