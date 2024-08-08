@@ -1,7 +1,6 @@
 name: Echo Secret Variable
 
-on:
-  workflow-dispatch
+on: workflow_dispatch
 
 jobs:
   display-secret:
