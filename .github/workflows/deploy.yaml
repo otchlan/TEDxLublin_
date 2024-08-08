@@ -38,5 +38,5 @@ jobs:
 
         echo "$ENV_PROD" | base64 --decode > .env.prod
         
-        docker compose --file docker-compose.prod.yaml up --build
+        docker compose --file docker-compose.prod.yaml up --build -d
         EOF
