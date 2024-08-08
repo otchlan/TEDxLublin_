@@ -27,7 +27,7 @@ jobs:
 
 
       run: |
-        apt-get update && apt-get install -y openssh-client sshpass
+        sudo apt-get update && apt-get install -y openssh-client sshpass
 
         mkdir -p ~/.ssh
         ssh-keyscan -H "$DO_SERVER_IP" >> ~/.ssh/known_hosts
