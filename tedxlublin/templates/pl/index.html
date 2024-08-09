@@ -5,6 +5,8 @@
     <meta charset="utf-8">
 {% load static %}
 </style>
+    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/img/event_baners_horizontal/baner_transparent_black_font.webp" as="image">
 	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}" />
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -41,7 +43,7 @@
                 </ul>
             </div>
             <div class="sidebar">
-                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" loading="lazy" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
@@ -69,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="pb-5 d-flex justify-content-center"><img id="index-event-img" fetchpriority="high" rel="preload"></div>
+        <div class="pb-5 d-flex justify-content-center"><img id="index-event-img" fetchpriority="high"></div>
     </section>
     <section class="bg-light shadow-lg">
         <div class="container py-4 py-xl-5">
@@ -105,7 +107,7 @@
     <section class="bg-light">
         <div class="container pt-2 pt-xl-3">
             <div class="row mb-4 mb-lg-5">
-                <div class="col text-center mx-auto"><img class="w-50 py-3" src="/assets/img/logos/tedxlublin/logo-black-accelerate.png">
+                <div class="col text-center mx-auto"><img class="w-50 py-3" src="/assets/img/logos/tedxlublin/logo-black-accelerate.png" loading="lazy" >
                     <h2>POZNAJ NASZYCH PRELEGENTÓW</h2>
                     <p class="w-lg-50">To właśnie oni udzielą wartościowych prelekcji</p>
                 </div>
@@ -114,7 +116,7 @@
                 <div class="swiper-wrapper mb-5 mb-md-6" id="swiper-wrapper-31dddc48f6d10ba65" aria-live="polite" style="transform:translate3d(-1141px, 0px, 0px);transition-duration:0ms;">
                     <div class="swiper-slide" role="group" aria-label="1 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjanik.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjanik.webp" alt="Speaker 1" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Karolina Anna Janik</h3>
                                     <p class="card-text speaker-title mb-2">Psycholog biznesu / Trener personalny</p>
@@ -132,7 +134,7 @@
                     </div>
                     <div class="swiper-slide" role="group" aria-label="2 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ahoroch.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ahoroch.webp" alt="Speaker 2" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Andrzej Horoch</h3>
                                     <p class="card-text speaker-title mb-2">Przedsiębiorca / Specjalista technologii immersyjnych</p>
@@ -148,7 +150,7 @@
                     </div>
                     <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/pgasiorowski.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/pgasiorowski.webp" alt="Speaker 3" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Piotr Gąsiorowski</h3>
                                     <p class="card-text speaker-title mb-2">Przedsiębiorca / CTO</p>
@@ -164,7 +166,7 @@
                     </div>
                     <div class="swiper-slide swiper-slide-active" role="group" aria-label="4 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/djanik.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/djanik.webp" alt="Speaker 4" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Daniel Janik</h3>
                                     <p class="card-text speaker-title mb-2">Trener mentalny / Mówca</p>
@@ -180,7 +182,7 @@
                     </div>
                     <div class="swiper-slide swiper-slide-next" role="group" aria-label="5 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjworner.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjworner.webp" alt="Speaker 5" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Kevin Johannes Worner</h3>
                                     <p class="card-text speaker-title mb-2">Inwestor / Przedsiębiorca medialny</p>
@@ -194,7 +196,7 @@
                     </div>
                     <div class="swiper-slide" role="group" aria-label="6 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/rpranagal.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/rpranagal.webp" alt="Speaker 6" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Robert Pranagal</h3>
                                     <p class="card-text speaker-title mb-2">Tłumacz / Artysta fotograf / Podcaster</p>
@@ -211,7 +213,7 @@
                     </div>
                     <div class="swiper-slide" role="group" aria-label="7 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/dfilipiuk.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/dfilipiuk.webp" alt="Speaker 7" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Dorota Filipiuk</h3>
                                     <p class="card-text speaker-title mb-2">Psycholog / Trener personalny</p>
@@ -229,7 +231,7 @@
                     </div>
                     <div class="swiper-slide" role="group" aria-label="8 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/mjaron.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/mjaron.webp" alt="Speaker 8" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Michał Jaroń</h3>
                                     <p class="card-text speaker-title mb-2">Ekspert i praktyk AI</p>
@@ -245,7 +247,7 @@
                     </div>
                     <div class="swiper-slide" role="group" aria-label="10 / 10" style="width:355.333px;margin-right:25px;">
                         <article>
-                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ijanke.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card m-2 m-md-0"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ijanke.webp" alt="Speaker 9" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name">Igor Janke</h3>
                                     <p class="card-text speaker-title mb-2">Ekspert medialny / Analityk polityczny</p>
@@ -294,7 +296,7 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col">
-                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png"></a></div>
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png" loading="lazy" ></a></div>
                 </div>
             </div>
             <div class="row g-4">

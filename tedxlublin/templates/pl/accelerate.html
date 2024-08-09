@@ -5,6 +5,8 @@
     <meta charset="utf-8">
 {% load static %}
 </style>
+    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/img/event_baners_horizontal/baner_transparent_all_white.webp" as="image">
 	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}" />
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -41,7 +43,7 @@
                 </ul>
             </div>
             <div class="sidebar">
-                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"  loading="lazy" ></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
@@ -203,7 +205,7 @@
                 </div>
             </div>
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjanik.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjanik.webp" alt="Speaker 1"  loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Karolina Anna Janik</h3>
                     <p class="card-text speaker-title mb-2">Psycholog biznesu / Trener personalny</p>
@@ -219,7 +221,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ahoroch.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ahoroch.webp" alt="Speaker 2" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Andrzej Horoch</h3>
                     <p class="card-text speaker-title mb-2">Przedsiębiorca / Specjalista technologii immersyjnych</p>
@@ -233,7 +235,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/pgasiorowski.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/pgasiorowski.webp" alt="Speaker 3" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Piotr Gąsiorowski</h3>
                     <p class="card-text speaker-title mb-2">CTO</p>
@@ -247,7 +249,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/djanik.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/djanik.webp" alt="Speaker 4" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Daniel Janik</h3>
                     <p class="card-text speaker-title mb-2">Dyrektor Akademii Trenerów Mentalnych / Trener mentalny / Mówca</p>
@@ -261,7 +263,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/mjaron.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/mjaron.webp" alt="Speaker 5" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Michał Jaroń</h3>
                     <p class="card-text speaker-title mb-2">Ekspert Sztucznej Inteligencji / Senior Data Scientist</p>
@@ -275,7 +277,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ijanke.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/ijanke.webp" alt="Speaker 6" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Igor Janke</h3>
                     <p class="card-text speaker-title mb-2">Dziennikarz / Publicysta&nbsp;</p>
@@ -289,7 +291,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/rpranagal.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/rpranagal.webp" alt="Speaker 7" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Robert Pranagal</h3>
                     <p class="card-text speaker-title mb-2">Tłumacz / Artysta fotograf / Podcaster</p>
@@ -304,7 +306,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/dfilipiuk.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/dfilipiuk.webp" alt="Speaker 8" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Dorota Filipiuk</h3>
                     <p class="card-text speaker-title mb-2">Psycholog</p>
@@ -320,7 +322,7 @@
             </div>
             <hr class="mx-auto w-50 my-4 border-dark-subtle">
             <div class="row px-3">
-                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjworner.webp" alt="Speaker 1"></div>
+                <div class="col d-lg-flex align-items-lg-center col-12 col-lg-4"><img class="img-fluid card-img-top speaker-image w-100" src="/assets/img/photos/speakers/accelerate_2024/kjworner.webp" alt="Speaker 9" loading="lazy" ></div>
                 <div class="col my-3 col-12 col-lg-8">
                     <h3 class="card-title speaker-name">Kevin Johannes Worner</h3>
                     <p class="card-text speaker-title mb-2">*speaker role*</p>
@@ -488,51 +490,51 @@
         <div class="container overflow-hidden">
             <div class="row">
                 <div class="col col-12 col-md-6">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/lublinmi.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/lublinmi.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col col-12 col-md-6">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/teatrstary.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/teatrstary.png" width="100%" loading="lazy" ></div>
                 </div>
             </div>
             <div class="row gy-4">
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/medisept.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/medisept.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/nancy_accessories.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/nancy_accessories.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/look_as_photographer.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/look_as_photographer.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/jz.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/jz.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/lublin_game_spot.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/lublin_game_spot.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/mtrojanowska.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/mtrojanowska.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/avalon.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/avalon.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/baobab.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/baobab.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/bizitok.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/bizitok.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pizzalover.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pizzalover.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pcsi.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/pcsi.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/homofaber.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/homofaber.png" width="100%" loading="lazy" ></div>
                 </div>
                 <div class="col-6 col-md-4 col-xl-3 text-center">
-                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/polawiaczeperel.png" width="100%"></div>
+                    <div class="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5"><img src="/assets/img/logos/sponsors/accelerate_2024/polawiaczeperel.png" width="100%" loading="lazy" ></div>
                 </div>
             </div>
         </div>
@@ -626,7 +628,7 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col">
-                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png"></a></div>
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png"  loading="lazy" ></a></div>
                 </div>
             </div>
             <div class="row g-4">

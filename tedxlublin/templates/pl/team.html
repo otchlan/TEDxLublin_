@@ -5,6 +5,9 @@
     <meta charset="utf-8">
 {% load static %}
 </style>
+    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/img/photos/others/IMG_6620.webp" as="image">
+    <link rel="preload" href="/assets/img/logos/tedxlublin/black_background_logo.png" as="image">
 	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}" />
 	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -42,7 +45,7 @@
                 </ul>
             </div>
             <div class="sidebar">
-                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
+                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"  loading="lazy" ></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
                         <ul class="navbar-nav flex-column me-auto">
@@ -71,16 +74,16 @@
                 </div>
             </div>
             <div class="row justify-content-center gy-3">
-                <div class="col col-12"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/photos/others/IMG_6620.webp"></div>
-                <div class="col col-12 col-lg-6"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/logos/tedxlublin/black_background_logo.png"></div>
+                <div class="col col-12"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/photos/others/IMG_6620.webp"  loading="lazy" ></div>
+                <div class="col col-12 col-lg-6"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/logos/tedxlublin/black_background_logo.png"  loading="lazy" ></div>
                 <div class="col col-12 col-lg-6 p-5">
                     <div class="mx-1" style="width: 80%;">
                         <h2>RAZEM TWORZYMY PRZYSZŁOŚĆ</h2>
                     </div>
                     <p class="mb-4">TEDxLublin to nie tylko wydarzenie – to ludzie.&nbsp;Jesteśmy grupą kreatywnych i pełnych pasji osób, które dążą do tego, aby każde nasze spotkanie było wyjątkowe. Nasz zespół łączy siły, by inspirować i angażować społeczność w wymianę idei. <br>Poznaj osoby, które stoją za sukcesem TEDxLublin i zobacz, co nas napędza.<br><br></p>
                 </div>
-                <div class="col col-12 col-lg-6"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/photos/others/IMG_0866.webp"></div>
-                <div class="col col-12 col-lg-6"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/photos/others/IMG_0878.webp"></div>
+                <div class="col col-12 col-lg-6"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/photos/others/IMG_0866.webp" loading="lazy" ></div>
+                <div class="col col-12 col-lg-6"><img class="rounded img-fluid w-100 fit-cover" src="/assets/img/photos/others/IMG_0878.webp" loading="lazy" ></div>
             </div>
         </div>
         <div class="container pt-4 pt-xl-5">
@@ -94,7 +97,7 @@
                     </div>
                     <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center gy-3">
                         <div class="col">
-                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/rszuwalski.webp" alt="Speaker 1" style="filter: saturate(106%);">
+                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/rszuwalski.webp" alt="Member 1" style="filter: saturate(106%);" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name text-primary">Rafał Szuwalski</h3>
                                     <p class="card-text speaker-title mb-2 fw-bold text-muted">Organizator</p>
@@ -108,7 +111,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/mszczepanska.webp" alt="Speaker 1" style="filter: saturate(106%);">
+                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/mszczepanska.webp" alt="Member 2" style="filter: saturate(106%);" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name text-primary">Małgorzata Szczepańska</h3>
                                     <p class="card-text speaker-title mb-2 fw-bold text-muted">Organizator</p>
@@ -134,7 +137,7 @@
                     </div>
                     <div class="row gy-4 row-cols-1 row-cols-md-2 d-flex justify-content-center gy-3">
                         <div class="col">
-                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/apodsiadly.webp" alt="Speaker 1">
+                            <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/apodsiadly.webp" alt="Mmeber 3" loading="lazy" >
                                 <div class="card-body p-4">
                                     <h3 class="card-title speaker-name text-primary">Artur Podsiadły</h3>
                                     <p class="card-text speaker-title mb-2 fw-bold text-muted">IT / Web design</p>
@@ -160,7 +163,7 @@
             </div>
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center gy-3">
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/ytserakhovich.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/ytserakhovich.webp" alt="Member 4" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Yeva Tserakhovich</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Koordynatorka ds. marketingu</p>
@@ -174,7 +177,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/bolechowski.webp" alt="Speaker 1" style="filter: contrast(115%) saturate(103%);">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/bolechowski.webp" alt="Member 5" style="filter: contrast(115%) saturate(103%);" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Bartłomiej Olechowski</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Marketing</p>
@@ -190,7 +193,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/kszawloga.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/kszawloga.webp" alt="Member 6" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Katarzyna Szawłoga </h3>
                             <p class="fw-bold text-muted card-text speaker-title mb-2">Marketing</p>
@@ -204,7 +207,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/nparadowska.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/nparadowska.webp" alt="Member 7" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Natalia Paradowska</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Marketing</p>
@@ -216,7 +219,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/zczeczelewska.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/zczeczelewska.webp" alt="Member 8" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Zuzanna Czeczelewska</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Marketing / Copywriting</p>
@@ -233,7 +236,7 @@
             </div>
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center">
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/akot.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/akot.webp" alt="Member 9" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Aleksandra Kot</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
@@ -245,7 +248,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/pwojcik.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/pwojcik.webp" alt="Member 10" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Przemysław Wójcik</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
@@ -259,7 +262,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/adados.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/adados.webp" alt="Member 11" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Agata Dados</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
@@ -275,7 +278,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/msierociukperzyna.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/msierociukperzyna.webp" alt="Member 12" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Marzena Sierociuk-Perzyna</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
@@ -292,7 +295,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/pwinnicki.webp" alt="Speaker 1">
+                    <div class="card border-0 shadow-sm speaker-card"><img class="img-fluid card-img-top w-100 d-block card-img-top speaker-image w-100" src="/assets/img/photos/team_members/pwinnicki.webp" alt="Member 13" loading="lazy" >
                         <div class="card-body p-4">
                             <h3 class="card-title speaker-name text-primary">Paweł Winnicki</h3>
                             <p class="card-text speaker-title mb-2 fw-bold text-muted">Opiekun prelegenta</p>
@@ -339,7 +342,7 @@
         <div class="container p-3">
             <div class="row">
                 <div class="col">
-                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png"></a></div>
+                    <div class="region py-1"><a href="{% url 'event' lang='pl' %}"><img class="m-1" src="/assets/img/logos/tedxlublin/logo-black.png" loading="lazy" ></a></div>
                 </div>
             </div>
             <div class="row g-4">
