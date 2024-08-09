@@ -41,7 +41,7 @@ services:
       - certbot-var:/var/lib/letsencrypt
     depends_on:
       - nginx
-    command: certonly --webroot --webroot-path=/var/www/html --email artpods56@gmail.com --agree-tos --non-interactive -d tedxlublin.rocks -d www.tedxlublin.rocks
+    command: certonly --webroot --webroot-path=/var/www/html --email artpods56@gmail.com --agree-tos --non-interactive -d tedxlublin.org -d www.tedxlublin.org
   
   postgres:
     image: postgres:latest
