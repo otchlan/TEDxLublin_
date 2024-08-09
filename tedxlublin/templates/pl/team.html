@@ -42,7 +42,6 @@
                 </ul>
             </div>
             <div class="sidebar">
-                <div class="dismiss"><i class="fas fa-caret-left"></i></div>
                 <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
@@ -56,7 +55,9 @@
                         </ul>
                     </div>
                 </nav>
-            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
+            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list text-primary">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                </svg></button>
         </div>
     </nav>
     <section class="newsletter-subscribe p-3 py-xl-5 baner" style="background: url(&quot;/assets/img/elements/accelerate_arrows_white_xl.png&quot;) right / auto no-repeat;"></section>
@@ -313,7 +314,7 @@
                     <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
                         <div>
                             <h2 class="text-uppercase fw-bold mb-3">chcesz do nas dołączyć?</h2>
-                            <p class="mb-2">Jeśli chcesz dowiedzieć się więcej o naszych działaniach i być częścią ekscytujących projektów, dołącz do nas. Skontaktuj się z nami, aby uzyskać więcej informacji i stać się częścią naszej dynamicznej społeczności.<br><br></p><a class="btn btn-primary fs-5 me-2 py-2 px-4" role="button" href="{% url 'contact' lang='pl' %}">KONTAKT</a><a class="btn fs-5 btn-outline-primary me-2 py-2 px-4" role="button" href="{% url 'about' lang='pl' %}">IDEA</a>
+                            <p class="mb-2">Jeśli chcesz dowiedzieć się więcej o naszych działaniach i być częścią ekscytujących projektów, dołącz do nas. Skontaktuj się z nami, aby uzyskać więcej informacji i stać się częścią naszej dynamicznej społeczności.<br><br></p><a href="{% url 'contact' lang='pl' %}"><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">KONTAKT</button></a><a href="{% url 'about' lang='pl' %}"><button class="btn fs-5 btn-outline-primary me-2 py-2 px-4" type="button">IDEA</button></a>
                         </div>
                     </div>
                 </div>
@@ -404,7 +405,6 @@
     </footer>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/script.min.js"></script>
 </body>

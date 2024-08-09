@@ -42,7 +42,6 @@
                 </ul>
             </div>
             <div class="sidebar">
-                <div class="dismiss"><i class="fas fa-caret-left"></i></div>
                 <div class="brand"><a class="{% url 'index' lang='pl' %}" href="/templates/pl/index.html"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
                 <nav class="navbar navbar-expand navbar-dark">
                     <div class="container-fluid">
@@ -56,7 +55,9 @@
                         </ul>
                     </div>
                 </nav>
-            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><i class="fa fa-navicon"></i></button>
+            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list text-primary">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                </svg></button>
         </div>
     </nav>
     <section class="newsletter-subscribe p-3 py-xl-5 baner" style="background: url(&quot;/assets/img/elements/accelerate_arrows_white_xl.png&quot;) right / auto no-repeat;"></section>
@@ -77,7 +78,7 @@
                     <div class="text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
                         <div>
                             <h4 class="fw-bold">PARTNERZY</h4>
-                            <p>Dołącz do grona wybitnych mówców i podziel się swoją wiedzą oraz doświadczeniem z szeroką publicznością. Twoje wystąpienie może inspirować, edukować i motywować innych do działania. Nie przegap tej wyjątkowej okazji, aby zostawić ślad na TEDx Lublin.</p><a href="/templates/pl/forms/partner_form.html">Formularz dla partnerów&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                            <p>Dołącz do grona wybitnych mówców i podziel się swoją wiedzą oraz doświadczeniem z szeroką publicznością. Twoje wystąpienie może inspirować, edukować i motywować innych do działania. Nie przegap tej wyjątkowej okazji, aby zostawić ślad na TEDx Lublin.</p><a href="{% url 'contact_partners' lang='pl' %}">Formularz dla partnerów&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>
                         </div>
@@ -85,7 +86,7 @@
                     <div class="text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
                         <div>
                             <h4 class="fw-bold">WOLONTARIUSZE</h4>
-                            <p>Stań się częścią inspirującego zespołu TEDx Lublin! Jako wolontariusz będziesz miał okazję zdobyć cenne doświadczenie, poznać interesujących ludzi i przyczynić się do organizacji wydarzenia, które zmienia świat. Twoje zaangażowanie i pasja są dla nas bezcenne.</p><a href="/templates/pl/forms/volunteer_form.html">Formularz dla wolontariuszy&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                            <p>Stań się częścią inspirującego zespołu TEDx Lublin! Jako wolontariusz będziesz miał okazję zdobyć cenne doświadczenie, poznać interesujących ludzi i przyczynić się do organizacji wydarzenia, które zmienia świat. Twoje zaangażowanie i pasja są dla nas bezcenne.</p><a href="{% url 'contact_volunteers' lang='pl' %}">Formularz dla wolontariuszy&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>
                         </div>
@@ -93,7 +94,7 @@
                     <div class="text-md-start d-flex flex-column align-items-center align-items-md-start">
                         <div>
                             <h4 class="fw-bold">PRELEGENCI</h4>
-                            <p>Dołącz do grona wybitnych mówców i podziel się swoją wiedzą oraz doświadczeniem z szeroką publicznością. Twoje wystąpienie może inspirować, edukować i motywować innych do działania. Nie przegap tej wyjątkowej okazji, aby zostawić ślad na TEDx Lublin.</p><a href="/templates/pl/forms/speaker_form.html">Formularz dla prelegentów&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                            <p>Dołącz do grona wybitnych mówców i podziel się swoją wiedzą oraz doświadczeniem z szeroką publicznością. Twoje wystąpienie może inspirować, edukować i motywować innych do działania. Nie przegap tej wyjątkowej okazji, aby zostawić ślad na TEDx Lublin.</p><a href="{% url 'contact_speakers' lang='pl' %}">Formularz dla prelegentów&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
                                 </svg></a>
                         </div>
@@ -213,7 +214,6 @@
     </footer>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/script.min.js"></script>
 </body>
