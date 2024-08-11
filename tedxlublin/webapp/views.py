@@ -80,3 +80,52 @@ def faq(request, lang):
 
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
+
+
+@csrf_exempt
+def subscribe_newsletter(request):
+    logger.debug('POST request received')
+
+    if request.method == 'POST':
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            # Extract cleaned data from the form
+            email = form.cleaned_data['email']
+            name = form.cleaned_data['name']
+            privacy_policy = form.cleaned_data['privacy_policy']
+            marketing_consent = form.cleaned_data['marketing_consent']
+            
+            
+            logger.debug(os.environ.get("MAILERLITE_GROUPS_IDS").split(" "))
+            # Define the data payload
+            payload = {
+                "email": email,
+                "fields": {
+                    "name": name,
+                },
+                "groups": os.environ.get("MAILERLITE_GROUPS_IDS").split(" "),  # Replace with actual group IDs
+                "opted_in_at": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                "ip_address": request.META.get('REMOTE_ADDR'),
+                "status": "active" if marketing_consent else "unconfirmed"
+            }
+
+            # MailerLite API request
+            mailerlite_url = 'https://connect.mailerlite.com/api/subscribers'
+            headers = {
+                'Content-Type': 'application/json',
+                'Authorization': f'Bearer {os.environ.get("MAILERLITE_API_KEY")}'
+            }
+
+            response = requests.post(mailerlite_url, headers=headers, json=payload)
+            logger.debug(f'MailerLite API response: {response.status_code}')
+
+            return redirect(request.META.get('HTTP_REFERER', 'default-redirect-url'), lang='pl')
+
+
+        else:
+            # If form is not valid, return the form with errors as JSON
+              return redirect(request.META.get('HTTP_REFERER', 'default-redirect-url'), lang='pl')
+
+    return JsonResponse({'success': False, 'error': 'Invalid request method'})
+
+

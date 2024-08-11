@@ -28,6 +28,7 @@ urlpatterns = [
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
     path('admin/', admin.site.urls),
     path('tickets_iframe/', views.tickets_iframe, name='tickets_iframe'),
+    path('newsletter/subscribe/', views.subscribe_newsletter, name='subscribe_newsletter'),
     path('<str:lang>/', include('webapp.urls')),
     path('sitemap.xml', TemplateView.as_view(template_name='sitemap.xml', content_type='application/xml')),
     path('robots.txt', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),

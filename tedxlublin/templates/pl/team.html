@@ -333,18 +333,47 @@
     </section>
     <section class="newsletter-subscribe p-3 py-xl-5">
         <div class="container">
-            <div class="row mb-2">
+            <div class="row py-3">
                 <div class="col-md-8 col-xl-6 mx-auto text-white">
                     <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
                     <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
+                    <form class="d-flex flex-wrap" method="post" action="{% url 'subscribe_newsletter' %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col p-1 col-12 col-sm-6 col-md-4">
+                                {{ newsletter_form.name }}
+                            </div>
+                            <div class="col p-1 col-12 col-sm-6 col-md-4">
+                                {{ newsletter_form.email }}
+                            </div>
+                            <div class="col p-1 col-12 col-md-4">
+                                <button  id="subscribe-button" class="btn btn-primary" type="button" >Subskrybuj</button>
+                            </div>
+                        </div>
+
                 </div>
             </div>
-            <form class="d-flex justify-content-center flex-wrap" method="post">
-                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="e-mail"></div>
-                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subskrybuj</button></div>
-            </form>
         </div>
     </section>
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: url('/assets/img/elements/accelerate_arrows_black_xl.png') center / cover no-repeat;height: 70px;">
+                    <h2 class="m-0">Newsletter</h2>
+                    <button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button></div>
+                <div class="modal-body">
+                    <p>Potwierdź chęć subskrypcji naszego newslettera.</p>
+                    <div class="form-check">{{ newsletter_form.privacy_policy }}<label class="form-label form-check-label" for="privacyPolicy" style="font-size: 0.8rem;"> Akceptuję <a href="{% url 'privacy_policy' lang='pl' %}">Politykę Prywatności. </a></label></div>
+                    <div class="form-check mt-2">{{ newsletter_form.marketing_consent }}<label class="form-label form-check-label" for="marketingConsent" style="font-size: 0.8rem;"> Wyrażam zgodę na otrzymywanie bezpłatnych dotyczących działalności organizacji TEDxLublin w formie newslettera na warunkach określonych w naszym <a href="{% url 'terms_and_conditions' lang='pl' %}">Regulaminie</a>. </label></div>
+                    <small>Używamy MailerLite jako naszej platformy marketingowej. Klikając poniżej potwierdzasz, że Twoje dane zostaną przesłane do MailerLite w celu przetworzenia. </small>
+                    <p style="font-size: 0.7rem;"><a href="https://www.mailerlite.com/legal/privacy-policy" target="_blank">Więcej informacji na temat praktyk ochrony prywatności MailerLite można znaleźć tutaj.</a></p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-dark" data-bs-dismiss="modal" type="button">Anuluj</button><button id="confirmSubscription" class="btn btn-primary" type="submit">Potwierdź</button></div>
+            </form>
+            </div>
+        </div>
+    </div>
     <footer class="page-footer shadow-lg p-3">
         <div class="container p-3">
             <div class="row">
@@ -417,6 +446,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/script.min.js"></script>
+    <script src="/assets/js/modals.js"></script>
 </body>
 
 </html>
