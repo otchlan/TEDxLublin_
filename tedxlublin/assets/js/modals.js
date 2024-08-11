@@ -19,11 +19,9 @@ document.getElementById('subscribe-button').addEventListener('click', function(e
     }
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    var messages = document.querySelectorAll('.alert');
-    if (messages.length > 0) {
+    if (document.getElementById('messageModal')) {
+        // Display the modal
         var modal = new bootstrap.Modal(document.getElementById('messageModal'));
         modal.show();
     }

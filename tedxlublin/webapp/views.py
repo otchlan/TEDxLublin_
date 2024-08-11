@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from datetime import datetime
 from django.shortcuts import redirect
 from django.http import JsonResponse
+from django.contrib import messages
 from .forms import NewsletterForm
 import requests
 import re
@@ -133,6 +134,13 @@ def subscribe_newsletter(request):
             }
 
             response = requests.post(mailerlite_url, headers=headers, json=payload)
+            
+            #save to context response status code to pass it as context to the template to display proper message in polish language
+            if response.status_code == 200 or response.status_code == 201:
+                messages.success(request, 'Dziękujemy za zapisanie się na newsletter!')
+            else:
+                messages.error(request, 'Nie udało się zapisać na newsletter. Spróbuj ponownie później.')
+
             logger.debug(f'MailerLite API response: {response.status_code}')
 
             return redirect(request.META.get('HTTP_REFERER', 'default-redirect-url'), lang='pl')
