@@ -1,10 +1,19 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.clickjacking import xframe_options_exempt
-
+from django.views.decorators.csrf import csrf_exempt
+from datetime import datetime
+from django.shortcuts import redirect
+from django.http import JsonResponse
+from .forms import NewsletterForm
 import requests
 import re
 
+import os
+
+import logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 def index(request, lang):
     return render(request, f'{lang}/index.html')
@@ -44,6 +53,13 @@ def partners(request, lang):
 
 def tickets(request, lang):
     return render(request, f'{lang}/tickets.html')
+
+def privacy_policy(request, lang):
+    return render(request, f'{lang}/privacy_policy.html')
+
+def terms_and_conditions(request, lang):
+    return render(request, f'{lang}/terms_and_conditions.html')
+
 
 @xframe_options_exempt
 def tickets_iframe(request):
