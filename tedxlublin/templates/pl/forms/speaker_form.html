@@ -29,40 +29,30 @@
         <div class="bg bg-reverse bg2"></div>
         <div class="w-100 h-100 dimmer"></div>
     </div>
-    <div class="overlay"></div>
-    <nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
-        <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-black.png"></a>
-            <div class="collapse navbar-collapse" style="font-weight:bold;">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATION</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'faq' lang='pl' %}">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link rounded" id="tickets-btn" href="{% url 'tickets' lang='pl' %}" style="border-radius:0.5rem;">BILETY</a></li>
-                </ul>
-            </div>
-            <div class="sidebar">
-                <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" width="100%"></a></div>
-                <nav class="navbar navbar-expand navbar-dark">
-                    <div class="container-fluid">
-                        <ul class="navbar-nav flex-column me-auto">
-                            <li class="nav-item"><a class="nav-link" href="{% url 'event' lang='pl' %}">ACCELERATION</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'about' lang='pl' %}">IDEA</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'team' lang='pl' %}">O NAS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'faq' lang='pl' %}">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
-                        </ul>
+    {% include 'pl/components/navbar.html' %}
+    {% include 'pl/components/spacing_baner.html' %}
+    <section class="bg-light shadow-lg py-5">
+        <div class="container">
+            <div class="bg-secondary border-0 border-dark border rounded overflow-hidden">
+                <div class="row g-0">
+                    <div class="col col-12 col-xl-6">
+                        <div class="text-white p-4 p-md-5">
+                            <h2 class="fw-bold text-white mb-3">DOŁĄCZ DO NAS JAKO PRELEGENT</h2>
+                            <p class="mb-4">Masz pasję, wiedzę i doświadczenie, które chcesz podzielić z innymi?</p>
+                            <p class="mb-4">&nbsp;Dołącz do nas jako prelegent na TEDx Lublin! To wyjątkowa okazja, aby wystąpić przed inspirującą publicznością, nawiązać cenne kontakty i przyczynić się do szerzenia innowacyjnych idei. Twoje wystąpienie może zmieniać perspektywy, inspirować do działania i pozostawić trwały ślad. Nie czekaj – zgłoś się już dziś i stań się częścią naszego wyjątkowego wydarzenia!</p>
+                            <p class="mb-4">Dziękujemy za zainteresowanie wsparciem TEDxLublin. Z niecierpliwością czekamy na możliwość współpracy!</p>
+                        </div>
                     </div>
-                </nav>
-            </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list text-primary">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
-                </svg></button>
+                    <div class="col col-12 col-xl-6" style="min-height:250px;"><img id="sponsor-event-img" class="w-100 h-100 fit-cover"></div>
+                </div>
+            </div>
+            <section class="container my-5">
+                <h2 class="fw-bold mb-4">Zgłoszenie prelegenta</h2>
+                <p>Uprzejmie prosimy, abyś wypełnił/a poniższy formularz.</p>
+                <div class="alert alert-info" role="alert"><strong>REJESTRACJA ZAKOŃCZONA:</strong><span> Formularz zgłoszeniowy jest tymczasowo zamknięty, zachęcamy do bezpośredniego kontaktu.</span></div>
+            </section>
         </div>
-    </nav>
+    </section>
     <section class="newsletter-subscribe p-3 py-xl-5">
         <div class="container">
             <div class="row py-3">
@@ -106,42 +96,6 @@
             </div>
         </div>
     </div>
-    <section class="bg-light shadow-lg py-5">
-        <div class="container">
-            <div class="bg-secondary border-0 border-dark border rounded overflow-hidden">
-                <div class="row g-0">
-                    <div class="col col-12 col-xl-6">
-                        <div class="text-white p-4 p-md-5">
-                            <h2 class="fw-bold text-white mb-3">DOŁĄCZ DO NAS JAKO PRELEGENT</h2>
-                            <p class="mb-4">Masz pasję, wiedzę i doświadczenie, które chcesz podzielić z innymi?</p>
-                            <p class="mb-4">&nbsp;Dołącz do nas jako prelegent na TEDx Lublin! To wyjątkowa okazja, aby wystąpić przed inspirującą publicznością, nawiązać cenne kontakty i przyczynić się do szerzenia innowacyjnych idei. Twoje wystąpienie może zmieniać perspektywy, inspirować do działania i pozostawić trwały ślad. Nie czekaj – zgłoś się już dziś i stań się częścią naszego wyjątkowego wydarzenia!</p>
-                            <p class="mb-4">Dziękujemy za zainteresowanie wsparciem TEDxLublin. Z niecierpliwością czekamy na możliwość współpracy!</p>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-xl-6" style="min-height:250px;"><img id="sponsor-event-img" class="w-100 h-100 fit-cover"></div>
-                </div>
-            </div>
-            <section class="container my-5">
-                <h2 class="fw-bold mb-4">Zgłoszenie prelegenta</h2>
-                <p>Uprzejmie prosimy, abyś wypełnił/a poniższy formularz.</p>
-                <div class="alert alert-info" role="alert"><strong>REJESTRACJA ZAKOŃCZONA:</strong><span> Formularz zgłoszeniowy jest tymczasowo zamknięty, zachęcamy do bezpośredniego kontaktu.</span></div>
-            </section>
-        </div>
-    </section>
-    <section class="newsletter-subscribe p-3 py-xl-5">
-        <div class="container">
-            <div class="row mb-2">
-                <div class="col-md-8 col-xl-6 mx-auto text-white">
-                    <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
-                    <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
-                </div>
-            </div>
-            <form class="d-flex justify-content-center flex-wrap" method="post">
-                <div class="mb-3"><input class="form-control form-control" type="email" name="email" placeholder="e-mail"></div>
-                <div class="mb-3"><button class="btn btn-primary ms-2" type="submit">Subskrybuj</button></div>
-            </form>
-        </div>
-    </section>
  <footer class="page-footer shadow-lg p-3">
         <div class="container p-3">
             <div class="row">

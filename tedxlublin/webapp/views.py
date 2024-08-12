@@ -17,49 +17,112 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 def index(request, lang):
-    return render(request, f'{lang}/index.html')
+    
+    context = {
+        'active_page': 'index'
+    }
+    
+    return render(request, f'{lang}/index.html', context=context)
 
 
-def accelerate(request, lang):
-    return render(request, f'{lang}/accelerate.html')
+def event(request, lang):
+        
+    context = {
+        'active_page': 'event'
+    }
+    return render(request, f'{lang}/event.html', context=context)
 
 
 def about(request, lang):
-    return render(request, f'{lang}/about.html')
+    
+    context = {
+        'active_page': 'about'
+    }
+    return render(request, f'{lang}/about.html', context=context)
 
 
 def team(request, lang):
-    return render(request, f'{lang}/team.html')
+    
+    context = {
+        'active_page': 'team'
+    }
+    return render(request, f'{lang}/team.html', context=context)
 
 
 def contact(request, lang):
-    return render(request, f'{lang}/contact.html')
+    
+    context = {
+        'active_page': 'contact'
+    }
+    return render(request, f'{lang}/contact.html', context=context)
 
 
 def contact_speakers(request, lang):
-    return render(request, f'{lang}/forms/speaker_form.html')
+    
+    context = {
+        'active_page': 'contact'
+    }
+    return render(request, f'{lang}/forms/speaker_form.html', context=context)
 
 
 def contact_partners(request, lang):
-    return render(request, f'{lang}/forms/partner_form.html')
+    
+    context = {
+        'active_page': 'contact'
+    }
+    return render(request, f'{lang}/forms/partner_form.html', context=context)
 
 
 def contact_volunteers(request, lang):
-    return render(request, f'{lang}/forms/volunteer_form.html')
+    
+    context = {
+        'active_page': 'contact'
+    }
+    return render(request, f'{lang}/forms/volunteer_form.html', context=context)
 
 
 def partners(request, lang):
-    return render(request, f'{lang}/partners.html')
+    
+    context = {
+        'active_page': 'partners'
+    }
+    return render(request, f'{lang}/partners.html', context=context)
 
 
 def tickets(request, lang):
-    return render(request, f'{lang}/tickets.html')
+    
+    context = {
+        'active_page': 'tickets'
+    }
+    return render(request, f'{lang}/tickets.html', context=context)
 
 def privacy_policy(request, lang):
-    return render(request, f'{lang}/privacy_policy.html')
+    
+    context = {
+        'active_page': 'privacy_policy'
+    }
+    return render(request, f'{lang}/privacy_policy.html', context=context)
 
 def terms_and_conditions(request, lang):
-    return render(request, f'{lang}/terms_and_conditions.html')
+    
+    context = {
+        'active_page': 'terms_and_conditions'
+    }
+    return render(request, f'{lang}/terms_and_conditions.html', context=context)
+
+def faq(request, lang):
+    
+    context = {
+        'active_page': 'faq'
+    }
+    return render(request, f'{lang}/faq.html', context=context)
+
+def custom_404(request, exception):
+    
+    context = {
+        'active_page': '404'
+    }
+    return render(request, '404.html', status=404, context=context)
 
 
 @xframe_options_exempt
@@ -91,12 +154,6 @@ def tickets_iframe(request):
         return HttpResponse(modified_content)
     else:
         return HttpResponse('Error fetching the content', status=response.status_code)
-
-def faq(request, lang):
-    return render(request, f'{lang}/faq.html')
-
-def custom_404(request, exception):
-    return render(request, '404.html', status=404)
 
 
 @csrf_exempt

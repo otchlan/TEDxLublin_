@@ -1,0 +1,34 @@
+<div class="overlay"></div>
+<nav class="navbar fixed-top bg-body shadow navbar-expand-lg">
+    <div class="container-fluid p-1 mx-3"><a class="navbar-brand p-0" href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-black.png"></a>
+        <div class="collapse navbar-collapse" style="font-weight:bold;">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link {% if active_page == 'event' %} active {% endif %}" href="{% url 'event' lang='pl' %}">ACCELERATION</a></li>
+                <li class="nav-item"><a class="nav-link {% if active_page == 'about' %} active {% endif %}" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                <li class="nav-item"><a class="nav-link {% if active_page == 'team' %} active {% endif %}" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                <li class="nav-item"><a class="nav-link {% if active_page == 'partners' %} active {% endif %}" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                <li class="nav-item"><a class="nav-link {% if active_page == 'contact' %} active {% endif %}" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                <li class="nav-item"><a class="nav-link {% if active_page == 'faq' %} active {% endif %}" href="{% url 'faq' lang='pl' %}">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link {% if active_page == 'tickets' %} active {% endif %}" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <div class="brand"><a href="{% url 'index' lang='pl' %}"><img src="/assets/img/logos/tedxlublin/logo-white-accelerate.png" loading="lazy" width="100%"></a></div>
+            <nav class="navbar navbar-expand navbar-dark">
+                <div class="container-fluid">
+                    <ul class="navbar-nav flex-column me-auto">
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'event' %} active {% endif %}" href="{% url 'event' lang='pl' %}">ACCELERATION</a></li>
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'about' %} active {% endif %}" href="{% url 'about' lang='pl' %}">IDEA</a></li>
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'team' %} active {% endif %}" href="{% url 'team' lang='pl' %}">O NAS</a></li>
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'partners' %} active {% endif %}" href="{% url 'partners' lang='pl' %}">PARTNERZY</a></li>
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'contact' %} active {% endif %}" href="{% url 'contact' lang='pl' %}">KONTAKT</a></li>
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'faq' %} active {% endif %}" href="{% url 'faq' lang='pl' %}">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link {% if active_page == 'tickets' %} active {% endif %}" href="{% url 'tickets' lang='pl' %}">BILETY</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><button class="btn btn-primary d-flex open-menu sidebar-btn position-fixed d-lg-none" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list text-primary">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+            </svg></button>
+    </div>
+</nav>
