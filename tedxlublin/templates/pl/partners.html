@@ -1,37 +1,44 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="pl">
 
-<head>
-    <meta charset="utf-8">
-{% load static %}
-</style>
-    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/img/event_baners_horizontal/baner_transparent_all_white.webp" as="image">
-    <link rel="icon" href="{% static 'img/favicon.ico' %}" />
-	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TEDxLublin 2024: ACCELERATION | Partnerzy</title>
-    <link rel="canonical" href="https://www.tedxlublin.org/pl/partners.html">
-    <meta property="og:url" content="https://www.tedxlublin.org/pl/partners.html">
-    <meta property="og:image" content="https://www.tedxlublin.org/assets/img/event_baners_horizontal/baner_white_v2.webp">
-    <meta name="" content="">
-    <meta property="og:type" content="website">
-    <meta name="description" content="Poznaj sponsorów tegorocznego TEDxLublin! Sprawdź jak możesz zostać jednym z nich i zacząć z nami współpracować.">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-</head>
+{% extends 'base.html' %}
 
-<body>
-    <div id="background-container">
-        <div class="bg"></div>
-        <div class="bg bg-reverse"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg-reverse bg2"></div>
-        <div class="w-100 h-100 dimmer"></div>
-    </div>
-    {% include 'pl/components/navbar.html' %}
-    {% include 'pl/components/spacing_baner.html' %}
+{% block lang %}pl{% endblock %}
+
+{% block preload %}
+<link rel="preload" href="/assets/img/photos/others/IMG_6620.webp" as="image">
+<link rel="preload" href="/assets/img/logos/tedxlublin/black_background_logo.png" as="image">
+{% endblock %}
+
+{% block extra_meta %}
+<link rel="canonical" href="https://www.tedxlublin.org/pl/">
+<meta name="description" content="Zostań partnerem TEDxLublin i wspólnie budujmy wydarzenia, które łączą i inspirują ludzi.">
+
+{% endblock %}
+
+{% block title %}
+Partnerzy | TEDxLublin 2024: ACCELERATION
+{% endblock %}
+
+{% block og_tags %}
+<meta property="og:title" content="Partnerzy | TEDxLublin 2024: ACCELERATION">
+<meta property="og:url" content="https://www.tedxlublin.org/pl/partners/">
+{% endblock %}
+
+{% block twitter_tags %}
+<meta name="twitter:title" content="Partnerzy | TEDxLublin 2024: ACCELERATION">
+<meta property="twitter:url" content="https://www.tedxlublin.org/pl/partners/">
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block pre_js %}
+{% endblock %}
+
+
+
+
+{% block main %}
+{% include 'pl/components/spacing_baner.html' %}
     <section class="py-3 py-md-5 py-xl-8 shadow-lg bg-light">
         <div class="container">
             <div class="row justify-content-md-center pt-2">
@@ -107,56 +114,10 @@
             </div>
         </div>
     </section>
-    <section class="newsletter-subscribe p-3 py-xl-5">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-md-8 col-xl-6 mx-auto text-white">
-                    <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
-                    <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
-                    <form class="d-flex flex-wrap" method="post" action="{% url 'subscribe_newsletter' %}">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col p-1 col-12 col-sm-6 col-md-4">
-                                {{ newsletter_form.name }}
-                            </div>
-                            <div class="col p-1 col-12 col-sm-6 col-md-4">
-                                {{ newsletter_form.email }}
-                            </div>
-                            <div class="col p-1 col-12 col-md-4">
-                                <button  id="subscribe-button" class="btn btn-primary" type="button" >Subskrybuj</button>
-                            </div>
-                        </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Confirmation Modal -->
-    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background: url('/assets/img/elements/accelerate_arrows_black_xl.png') center / cover no-repeat;height: 70px;">
-                    <h2 class="m-0">Newsletter</h2>
-                    <button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button></div>
-                <div class="modal-body">
-                    <p>Potwierdź chęć subskrypcji naszego newslettera.</p>
-                    <div class="form-check">{{ newsletter_form.privacy_policy }}<label class="form-label form-check-label" for="privacyPolicy" style="font-size: 0.8rem;"> Akceptuję <a href="{% url 'privacy_policy' lang='pl' %}">Politykę Prywatności. </a></label></div>
-                    <div class="form-check mt-2">{{ newsletter_form.marketing_consent }}<label class="form-label form-check-label" for="marketingConsent" style="font-size: 0.8rem;"> Wyrażam zgodę na otrzymywanie bezpłatnych dotyczących działalności organizacji TEDxLublin w formie newslettera na warunkach określonych w naszym <a href="{% url 'terms_and_conditions' lang='pl' %}">Regulaminie</a>. </label></div>
-                    <small>Używamy MailerLite jako naszej platformy marketingowej. Klikając poniżej potwierdzasz, że Twoje dane zostaną przesłane do MailerLite w celu przetworzenia. </small>
-                    <p style="font-size: 0.7rem;"><a href="https://www.mailerlite.com/legal/privacy-policy" target="_blank">Więcej informacji na temat praktyk ochrony prywatności MailerLite można znaleźć tutaj.</a></p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-dark" data-bs-dismiss="modal" type="button">Anuluj</button><button id="confirmSubscription" class="btn btn-primary" type="submit">Potwierdź</button></div>
-            </form>
-            </div>
-        </div>
-    </div>
     {% include 'pl/components/newsletter.html' %}
-    {% include 'pl/components/footer.html' %}
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/script.min.js"></script>
-    <script src="/assets/js/modals.js"></script>
-</body>
+{% endblock %}
 
-</html>
+{% block extra_js %}
+<script src="/assets/js/modals.js"></script>
+{% endblock %}

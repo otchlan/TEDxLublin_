@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html data-bs-theme="light" lang="{% block lang %}{% endblock %}">
+  <head>
+    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
+    {% block preload %}{% endblock %}
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Artur Podsiadły">
+    <meta name="keywords" content="tedx, tedxlublin lublin konferencja">
+
+    {% block extra_meta %}{% endblock %}
+
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
+
+   
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="TEDxLublin">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="TEDxLublin to organizacja non-profit, która od 2013 roku organizuje cykliczne wydarzenia oraz warsztaty. Nasze inicjatywy to nie tylko konferencje, ale ruch napędzający rozwój lokalnej społeczności. Dołącz do nas i przekonaj się, jak idee zmieniają wszystko!">
+    <meta property="og:image" content="{% static 'img/opengraph_img.webp' %} ">
+    <meta property="og:image:alt" content="TEDxLublin Event Poster" />
+    <meta property="og:image:width" content="6912">
+    <meta property="og:image:height" content="3456">
+    {% block og_tags %}{% endblock %}
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="tedxlublin.org">
+    <meta name="twitter:description" content="TEDxLublin to organizacja non-profit, która od 2013 roku organizuje cykliczne wydarzenia oraz warsztaty. Nasze inicjatywy to nie tylko konferencje, ale ruch napędzający rozwój lokalnej społeczności. Dołącz do nas i przekonaj się, jak idee zmieniają wszystko!">
+    <meta property="twitter:image" content="{% static 'img/opengraph_img.webp' %} ">
+    <meta property="twitter:image:alt" content="TEDxLublin Event Poster" />
+    {% block twitter_tags %}{% endblock %}
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    {% block extra_css %}{% endblock %}
+
+    <!-- js -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
+
+  </head>
+  <body class="bg-white">
+
+    <div id="background-container">
+        <div class="bg"></div>
+        <div class="bg bg-reverse"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg-reverse bg2"></div>
+        <div class="w-100 h-100 dimmer"></div>
+    </div>
+
+    <!-- Navbar -->
+    {% include 'pl/components/navbar.html' %}
+    
+    <!-- Main -->
+    <main>
+      {% block main %}{% endblock %}
+    </main>
+    
+    <!-- Footer -->
+    {% include 'pl/components/footer.html' %}
+
+    {% block extra_js %}{% endblock %}
+      <!-- js  -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="/assets/js/script.min.js"></script>
+      <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
+
+

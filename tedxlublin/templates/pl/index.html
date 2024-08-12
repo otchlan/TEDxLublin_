@@ -1,36 +1,43 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="pl">
 
-<head>
-    <meta charset="utf-8">
-{% load static %}
-</style>
-    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/img/event_baners_horizontal/baner_transparent_black_font.webp" as="image">
-    <link rel="preload" href="/assets/img/event_baners_vertical/baner_transparent_black_font.webp" as="image">
-    <link rel="icon" href="{% static 'img/favicon.ico' %}" />
-	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TEDxLublin 2024: ACCELERATION | Strona główna</title>
-    <link rel="canonical" href="https://www.tedxlublin.org/pl/">
-    <meta property="og:url" content="https://www.tedxlublin.org/pl/">
-    <meta property="og:image" content="https://www.tedxlublin.org/assets/img/event_baners_horizontal/baner_white_v2.webp">
-    <meta name="" content="">
-    <meta property="og:type" content="website">
-    <meta name="description" content="Witamy na stronie głównej TEDxLublin 2024. Dołącz do nas w wyjątkowej podróży ku przyszłości pełnej inspiracji i innowacji. Odkryj, jak przyspieszamy zmiany!">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-</head>
+{% extends 'base.html' %}
 
-<body style="font-family: Helvetica !important;"><div>
-    <div class="bg"></div>
-    <div class="bg bg-reverse"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg-reverse bg2"></div>
-    <div class="w-100 h-100 dimmer"></div>
-</div>
-    {% include 'pl/components/navbar.html' %}
+{% block lang %}pl{% endblock %}
+
+{% block preload %}
+<link rel="preload" href="/assets/img/event_baners_horizontal/baner_transparent_black_font.webp" as="image">
+<link rel="preload" href="/assets/img/event_baners_vertical/baner_transparent_black_font.webp" as="image">
+{% endblock %}
+
+{% block extra_meta %}
+<link rel="canonical" href="https://www.tedxlublin.org/pl/">
+<meta name="description" content="TEDxLublin to organizacja non-profit, która od 2013 roku organizuje cykliczne wydarzenia oraz warsztaty. Nasze inicjatywy to nie tylko konferencje, ale ruch napędzający rozwój lokalnej społeczności. Dołącz do nas i przekonaj się, jak idee zmieniają wszystko!">
+
+{% endblock %}
+
+{% block title %}
+Strona główna | TEDxLublin 2024: ACCELERATION
+{% endblock %}
+
+{% block og_tags %}
+<meta property="og:title" content="Strona główna | TEDxLublin 2024: ACCELERATION">
+<meta property="og:url" content="https://www.tedxlublin.org/pl">
+{% endblock %}
+
+{% block twitter_tags %}
+<meta name="twitter:title" content="Strona główna | TEDxLublin 2024: ACCELERATION">
+<meta property="twitter:url" content="https://www.tedxlublin.org/pl">
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block pre_js %}
+{% endblock %}
+
+
+
+
+{% block main %}
     <section class="bg-white" style="padding-top: 65px;">
         <div class="container">
             <div class="row justify-content-md-center py-3">
@@ -249,12 +256,11 @@
     </section>
 
     {% include 'pl/components/newsletter.html' %}
-    {% include 'pl/components/footer.html' %}
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/script.min.js"></script>
-    <script src="/assets/js/modals.js"></script>
-</body>
 
-</html>
+    
+    {% endblock %}
+
+    {% block extra_js %}
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/modals.js"></script>
+    {% endblock %}

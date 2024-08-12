@@ -1,350 +1,311 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="pl" data-bss-forced-theme="light">
 
-<head>
-    <meta charset="utf-8">
-{% load static %}
-</style>
-    <link rel="preload" href="/assets/img/event_baners_vertical/baner_transparent_black_font.webp" as="image">
-    <link rel="preload" href="/assets/fonts/Helvetica-39e6ed7f48ac27598840a4893c8f93c8.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="icon" href="{% static 'img/favicon.ico' %}" />
-	<script defer src="https://cloud.umami.is/script.js" data-website-id="0d1f212a-7fa6-4a17-9ba8-7b501e4ba739"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TEDxLublin 2024: ACCELERATION | FAQ</title>
-    <link rel="canonical" href="https://www.tedxlublin.org/pl/faq">
-    <meta property="og:url" content="https://www.tedxlublin.org/pl/faq">
-    <meta property="og:image" content="https://www.tedxlublin.org/assets/img/event_baners_horizontal/baner_white_v2.webp">
-    <meta name="" content="">
-    <meta property="og:type" content="website">
-    <meta name="description" content="Szukasz informacji o TEDxLublin 2024? Sprawdź najczęściej zadawane pytania (FAQ) i znajdź odpowiedzi na wszystkie nurtujące Cię kwestie.">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-</head>
+{% extends 'base.html' %}
 
-<body>
-    <div>
-        <div class="bg"></div>
-        <div class="bg bg-reverse"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg-reverse bg2"></div>
-        <div class="w-100 h-100 dimmer"></div>
-    </div>
-    <div class="overlay"></div>
-    {% include 'pl/components/navbar.html' %}
-    <section class="bg-light" style="padding-top: 60px;">
-        <div class="container">
-            <div class="row gy-5 gy-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-6"><img class="rounded img-fluid" src="/assets/img/event_baners_vertical/baner_transparent_black_font.webp"></div>
-                <div class="col-12 col-lg-6">
-                    <div class="row justify-content-xl-end">
-                        <div class="col-12 col-xl-11">
-                            <h2 class="h1 mb-3">Masz jakieś pytania?</h2>
-                            <p class="lead fs-4 text-secondary">Jeśli masz pytania dotyczące TEDxLublin, sprawdź poniższe odpowiedzi na najczęściej zadawane pytania. Znajdziesz tu wszystkie niezbędne informacje na temat naszego wydarzenia.&nbsp;</p>
-                            <p class="lead fs-4 text-secondary mb-5">Jeśli nie znajdziesz odpowiedzi na swoje pytanie, skontaktuj się z nami – chętnie pomożemy!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="mx-auto w-50 my-4 border-dark-subtle">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="col align-self-center">
-                    <h2 class="fw-bold py-1">Ogólne</h2>
-                    <div class="accordion accordion-flush" role="tablist" id="accordion-2">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1">Co to TED?</button></h2>
-                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <p class="mb-0">TED to globalna organizacja non-profit, której misją jest szerzenie wartościowych idei poprzez krótkie, inspirujące wystąpienia. TED zaprasza ekspertów i pasjonatów z różnych dziedzin, aby podzielili się swoimi pomysłami na konferencjach, które odbywają się na całym świecie.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Jaka jest różnica między TED a TEDx?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <p class="mb-0">TED to główna konferencja organizowana przez TED, podczas której zapraszani są mówcy z całego świata. TEDx to niezależnie organizowane wydarzenia na licencji TED, które odbywają się lokalnie i mają na celu szerzenie idei w społecznościach lokalnych. TEDx wydarzenia działają na tych samych zasadach co TED, ale są organizowane przez lokalne zespoły.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">Czym jest TEDxLublin?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <p class="mb-0">TEDxLublin to lokalna, niezależnie organizowana konferencja na licencji TED, która odbywa się w Lublinie. Jej celem jest inspirowanie i edukowanie społeczności lokalnej poprzez dzielenie się wartościowymi pomysłami i doświadczeniami.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Czy to ten sam TEDx który widziałem/am na YouTube?</button></h2>
-                            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Tak, TEDxLublin jest częścią globalnej społeczności TED. Wiele wystąpień z konferencji TEDx jest również publikowanych na oficjalnym kanale TED na YouTube, dzięki czemu mogą dotrzeć do globalnej publiczności.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="fw-bold py-1 mt-3">Wydarzenie</h2>
-                    <div class="accordion accordion-flush" role="tablist" id="accordion-1">
-                        <div class="accordion-item m-1">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Kiedy i gdzie odbędzie się tegoroczny TEDxLublin 2024?</button></h2>
-                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Tegoroczny TEDxLublin odbędzie się 7 września 2024 r. w Teatrze Starym przy ul. Jezuickiej 18.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item m-1">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Jaki jest tegoroczny motyw przewodni?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Tegoroczny motyw przewodni TEDxLublin 2024 to "ACCELERATION" – przyspieszenie. Skupimy się na ideach, które mogą przyspieszyć postęp w różnych dziedzinach życia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item m-1">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">Jak wygląda harmonogram wydarzenia?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Harmonogram wydarzenia zostanie opublikowany bliżej daty konferencji. Prosimy o regularne sprawdzanie naszej strony internetowej oraz mediów społecznościowych, aby być na bieżąco.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">Czy wydarzenie będzie transmitowane online?</button></h2>
-                            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Nie planujemy transmitowania konferencji online. Nagrania z konferencji będziesz mógł obejrzeć online na głównym kanale TED'a.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5">Gdzie znajdę najbardziej aktualne informację dotyczące konferencji?</button></h2>
-                            <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Najbardziej aktualne informacje dotyczące konferencji znajdziesz na naszej oficjalnej stronie internetowej oraz na naszych profilach w mediach społecznościowych.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="fw-bold py-1 mt-3">Uczestnicy</h2>
-                    <div class="accordion accordion-flush" role="tablist" id="accordion-3">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="false" aria-controls="accordion-3 .item-1">Czy można robić zdjęcia i nagrywać podczas wydarzenia?</button></h2>
-                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-3">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Dozwolone jest tylko robienie zdjęć bez flesza. Nagrywanie jest zabronione, ze względu na warunki licencji TEDx. Prosimy o dyskrecję, aby nie zakłócać przebiegu konferencji i wystąpień prelegentów.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-2" aria-expanded="false" aria-controls="accordion-3 .item-2">Czy wydarzenie jest dostosowane dla osób niepełnosprawnych?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-3">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Tak, staramy się, aby nasze wydarzenie było dostępne dla wszystkich uczestników. Prosimy o wcześniejszy kontakt, abyśmy mogli zapewnić odpowiednie udogodnienia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-3" aria-expanded="false" aria-controls="accordion-3 .item-3">Jak zająć dobre miejsce na widowni?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-3">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Osobom którym zależy na zajęciu dogodnego miejsca zalecamy wcześniejsze przybycie. Możliwy jest także zakup biletu VIP który zapewnia rezerwacje najlepszego miejsca na sali teatru.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-4" aria-expanded="false" aria-controls="accordion-3 .item-4">Co da mi udział w konferencji TEDxLublin 2024?</button></h2>
-                            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-3">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Udział w TEDxLublin 2024 to możliwość inspirowania się innowacyjnymi pomysłami, nawiązywania wartościowych kontaktów oraz udziału w globalnej społeczności TED. To także szansa na rozwój osobisty i zawodowy.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col align-self-center">
-                    <h2 class="fw-bold py-1">Bilety</h2>
-                    <div class="accordion accordion-flush" role="tablist" id="accordion-4">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-1" aria-expanded="false" aria-controls="accordion-4 .item-1">Gdzie mogę kupić bilety?</button></h2>
-                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-4">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Bilety na TEDxLublin 2024 można kupić za pośrednictwem naszej strony internetowej. Sprzedaż biletów odbywa się przez platformę evenea. Prosimy o śledzenie aktualności, aby dowiedzieć się, kiedy sprzedaż zostanie otwarta.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-2" aria-expanded="false" aria-controls="accordion-4 .item-2">Jakie rodzaje biletów są do wyboru?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-4">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Oferujemy bilety Standardowe, Early Bird oraz VIP. Szczegółowe informacje o biletach znajdziesz na naszej stronie sprzedaży biletów.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-3" aria-expanded="false" aria-controls="accordion-4 .item-3">Czy mogę zwrócić lub odsprzedać bilet?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-4">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Bilety nie są imienne, co daje możliwość odsprzedaży ich lub przekazania. Nie podlegają one jednak zwrotowi. W wyjątkowych przypadkach prosimy o kontakt z organizatorem.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-4" aria-expanded="false" aria-controls="accordion-4 .item-4">Czy dostępne są bilety ulgowe?</button></h2>
-                            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-4">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Nie, bilety na tegoroczną edycję TEDxLublin nie podlegają żadnym ulgom.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-5" aria-expanded="false" aria-controls="accordion-4 .item-5">Czy jest możliwość otrzymania faktury VAT za bilet?</button></h2>
-                            <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-4">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Aby uzyskać fakturę za zakup biletu, należy wypełnić dane do faktury w odpowiednim polu, w ostatnim kroku składania zamówienia (przed zapłatą za zamówienie). Faktura generowana jest w formie elektronicznej i wysłana w wiadomości mailowej razem z biletem.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="fw-bold py-1 mt-3">Współpraca</h2>
-                    <div class="accordion accordion-flush" role="tablist" id="accordion-5">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-1" aria-expanded="false" aria-controls="accordion-5 .item-1">Jak mogę zostać partnerem TEDxLublin?</button></h2>
-                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-5">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Aby zostać partnerem TEDxLublin, prosimy o kontakt za pośrednictwem formularza na naszej stronie. Skontaktujemy się w celu omówienia możliwości współpracy.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-2" aria-expanded="false" aria-controls="accordion-5 .item-2">Czy mogę zgłosić się jako wolontariusz?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-5">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Tak, wolontariusze są nieocenioną częścią naszego zespołu. Aby zgłosić się jako wolontariusz, wypełnij formularz dostępny na naszej stronie.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-3" aria-expanded="false" aria-controls="accordion-5 .item-3">W jaki sposób mogę zgłosić się jako prelegent?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-5">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Aby zgłosić się jako prelegent, wypełnij formularz zgłoszeniowy na naszej stronie. Skontaktujemy się z Tobą w celu omówienia szczegółów.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="fw-bold py-1 mt-3">Inne</h2>
-                    <div class="accordion accordion-flush" role="tablist" id="accordion-6">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-1" aria-expanded="false" aria-controls="accordion-6 .item-1">Jak mogę skontaktować się z organizatorami?</button></h2>
-                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-6">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Możesz skontaktować się z nami za pośrednictwem formularza kontaktowego na naszej stronie internetowej. Możliwy jest także kontakt przez nasze profile społecznościowe. Chętnie odpowiemy na wszelkie pytania.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-2" aria-expanded="false" aria-controls="accordion-6 .item-2">Czy na miejscu wydarzenia będzie dostępny parking?</button></h2>
-                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-6">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Przy budynku Teatru Starego nie ma miejsc parkingowych. Najbliższy parking znajduje się przy Lubelskiej Architekturze. Ten parking jest płatny. W dzień wydarzenia zalecamy skorzystanie z komunikacji miejskiej.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-3" aria-expanded="false" aria-controls="accordion-6 .item-3">Czy na miejscu będzie można kupić przekąski i napoje?</button></h2>
-                            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-6">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Nie, przewidziany jest za to poczęstunek dla uczestników wydarzenia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-4" aria-expanded="false" aria-controls="accordion-6 .item-4">Czy wydarzenie będzie dostępne w języku angielskim?</button></h2>
-                            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-6">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Nie, duża większość wystąpień będzie w języku polskim. Tylko jedno wystąpienie na tegorocznej edycji TEDxLublin będzie w języku angielskim.&nbsp;Szczegóły dotyczące poszczególnych prezentacji znajdziesz w harmonogramie wydarzenia.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-5" aria-expanded="false" aria-controls="accordion-6 .item-5">Czy mogę otrzymać zaświadczenie o udziale w TEDxLublin?</button></h2>
-                            <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-6">
-                                <div class="accordion-body">
-                                    <p class="mb-0">Tak, na życzenie uczestników możemy wystawić zaświadczenie o udziale w wydarzeniu. Prosimy o kontakt z organizatorami po zakończeniu konferencji.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light">
-        <div class="container" style="background: url(&quot;/assets/img/elements/accelerate_arrows_md.png&quot;) right/ contain no-repeat;">
-            <div class="row h-100">
-                <div class="col text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-md-center justify-content-xl-center py-5 col-12">
-                    <div style="max-width: 350px;">
-                        <h1 class="fw-bold">Nadal szukasz odpowiedzi?</h1>
-                        <p class="my-3">Napisz do nas, a my postaramy się pomóc!</p><a class="btn btn-primary btn-lg me-2" role="button" href="{% url 'contact' lang='pl' %}">KONTAKT</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="newsletter-subscribe p-3 py-xl-5">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-md-8 col-xl-6 mx-auto text-white">
-                    <h2 class="display-6 lead display-shadow">Subskrybuj nasz newsletter</h2>
-                    <p class="display-shadow">Chcesz być na bieżąco z najnowszymi informacjami o TEDxLublin? Zapisz się do naszego newslettera, aby otrzymywać ekskluzywne aktualizacje związane z naszymi wydarzeniami oraz wiele więcej.</p>
-                    <form class="d-flex flex-wrap" method="post" action="{% url 'subscribe_newsletter' %}">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col p-1 col-12 col-sm-6 col-md-4">
-                                {{ newsletter_form.name }}
-                            </div>
-                            <div class="col p-1 col-12 col-sm-6 col-md-4">
-                                {{ newsletter_form.email }}
-                            </div>
-                            <div class="col p-1 col-12 col-md-4">
-                                <button  id="subscribe-button" class="btn btn-primary" type="button" >Subskrybuj</button>
-                            </div>
-                        </div>
+{% block lang %}pl{% endblock %}
 
+{% block preload %}
+<link rel="preload" href="/assets/img/photos/others/IMG_6620.webp" as="image">
+<link rel="preload" href="/assets/img/logos/tedxlublin/black_background_logo.png" as="image">
+{% endblock %}
+
+{% block extra_meta %}
+<link rel="canonical" href="https://www.tedxlublin.org/pl/">
+<meta name="description" content="Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące TEDxLublin i naszych wydarzeń.">
+
+{% endblock %}
+
+{% block title %}
+FAQ | TEDxLublin 2024: ACCELERATION
+{% endblock %}
+
+{% block og_tags %}
+<meta property="og:title" content="FAQ | TEDxLublin 2024: ACCELERATION">
+<meta property="og:url" content="https://www.tedxlublin.org/pl/faq/">
+{% endblock %}
+
+{% block twitter_tags %}
+<meta name="twitter:title" content="FAQ | TEDxLublin 2024: ACCELERATION">
+<meta property="twitter:url" content="https://www.tedxlublin.org/pl/faq/">
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block pre_js %}
+{% endblock %}
+
+
+
+
+
+{% block main %}
+{% include 'pl/components/spacing_baner.html' %}
+<section class="bg-light" style="padding-top: 60px;">
+    <div class="container">
+        <div class="row gy-5 gy-lg-0 align-items-lg-center">
+            <div class="col-12 col-lg-6"><img class="rounded img-fluid" src="/assets/img/event_baners_vertical/baner_transparent_black_font.webp"></div>
+            <div class="col-12 col-lg-6">
+                <div class="row justify-content-xl-end">
+                    <div class="col-12 col-xl-11">
+                        <h2 class="h1 mb-3">Masz jakieś pytania?</h2>
+                        <p class="lead fs-4 text-secondary">Jeśli masz pytania dotyczące TEDxLublin, sprawdź poniższe odpowiedzi na najczęściej zadawane pytania. Znajdziesz tu wszystkie niezbędne informacje na temat naszego wydarzenia.&nbsp;</p>
+                        <p class="lead fs-4 text-secondary mb-5">Jeśli nie znajdziesz odpowiedzi na swoje pytanie, skontaktuj się z nami – chętnie pomożemy!</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Confirmation Modal -->
-    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background: url('/assets/img/elements/accelerate_arrows_black_xl.png') center / cover no-repeat;height: 70px;">
-                    <h2 class="m-0">Newsletter</h2>
-                    <button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button></div>
-                <div class="modal-body">
-                    <p>Potwierdź chęć subskrypcji naszego newslettera.</p>
-                    <div class="form-check">{{ newsletter_form.privacy_policy }}<label class="form-label form-check-label" for="privacyPolicy" style="font-size: 0.8rem;"> Akceptuję <a href="{% url 'privacy_policy' lang='pl' %}">Politykę Prywatności. </a></label></div>
-                    <div class="form-check mt-2">{{ newsletter_form.marketing_consent }}<label class="form-label form-check-label" for="marketingConsent" style="font-size: 0.8rem;"> Wyrażam zgodę na otrzymywanie bezpłatnych dotyczących działalności organizacji TEDxLublin w formie newslettera na warunkach określonych w naszym <a href="{% url 'terms_and_conditions' lang='pl' %}">Regulaminie</a>. </label></div>
-                    <small>Używamy MailerLite jako naszej platformy marketingowej. Klikając poniżej potwierdzasz, że Twoje dane zostaną przesłane do MailerLite w celu przetworzenia. </small>
-                    <p style="font-size: 0.7rem;"><a href="https://www.mailerlite.com/legal/privacy-policy" target="_blank">Więcej informacji na temat praktyk ochrony prywatności MailerLite można znaleźć tutaj.</a></p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-dark" data-bs-dismiss="modal" type="button">Anuluj</button><button id="confirmSubscription" class="btn btn-primary" type="submit">Potwierdź</button></div>
-            </form>
             </div>
         </div>
     </div>
+    <hr class="mx-auto w-50 my-4 border-dark-subtle">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col align-self-center">
+                <h2 class="fw-bold py-1">Ogólne</h2>
+                <div class="accordion accordion-flush" role="tablist" id="accordion-2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1">Co to TED?</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-2">
+                            <div class="accordion-body">
+                                <p class="mb-0">TED to globalna organizacja non-profit, której misją jest szerzenie wartościowych idei poprzez krótkie, inspirujące wystąpienia. TED zaprasza ekspertów i pasjonatów z różnych dziedzin, aby podzielili się swoimi pomysłami na konferencjach, które odbywają się na całym świecie.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Jaka jest różnica między TED a TEDx?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2">
+                            <div class="accordion-body">
+                                <p class="mb-0">TED to główna konferencja organizowana przez TED, podczas której zapraszani są mówcy z całego świata. TEDx to niezależnie organizowane wydarzenia na licencji TED, które odbywają się lokalnie i mają na celu szerzenie idei w społecznościach lokalnych. TEDx wydarzenia działają na tych samych zasadach co TED, ale są organizowane przez lokalne zespoły.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">Czym jest TEDxLublin?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-2">
+                            <div class="accordion-body">
+                                <p class="mb-0">TEDxLublin to lokalna, niezależnie organizowana konferencja na licencji TED, która odbywa się w Lublinie. Jej celem jest inspirowanie i edukowanie społeczności lokalnej poprzez dzielenie się wartościowymi pomysłami i doświadczeniami.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Czy to ten sam TEDx który widziałem/am na YouTube?</button></h2>
+                        <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-2">
+                            <div class="accordion-body">
+                                <p class="mb-0">Tak, TEDxLublin jest częścią globalnej społeczności TED. Wiele wystąpień z konferencji TEDx jest również publikowanych na oficjalnym kanale TED na YouTube, dzięki czemu mogą dotrzeć do globalnej publiczności.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fw-bold py-1 mt-3">Wydarzenie</h2>
+                <div class="accordion accordion-flush" role="tablist" id="accordion-1">
+                    <div class="accordion-item m-1">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Kiedy i gdzie odbędzie się tegoroczny TEDxLublin 2024?</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Tegoroczny TEDxLublin odbędzie się 7 września 2024 r. w Teatrze Starym przy ul. Jezuickiej 18.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item m-1">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Jaki jest tegoroczny motyw przewodni?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Tegoroczny motyw przewodni TEDxLublin 2024 to "ACCELERATION" – przyspieszenie. Skupimy się na ideach, które mogą przyspieszyć postęp w różnych dziedzinach życia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item m-1">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">Jak wygląda harmonogram wydarzenia?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Harmonogram wydarzenia zostanie opublikowany bliżej daty konferencji. Prosimy o regularne sprawdzanie naszej strony internetowej oraz mediów społecznościowych, aby być na bieżąco.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">Czy wydarzenie będzie transmitowane online?</button></h2>
+                        <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Nie planujemy transmitowania konferencji online. Nagrania z konferencji będziesz mógł obejrzeć online na głównym kanale TED'a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5">Gdzie znajdę najbardziej aktualne informację dotyczące konferencji?</button></h2>
+                        <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Najbardziej aktualne informacje dotyczące konferencji znajdziesz na naszej oficjalnej stronie internetowej oraz na naszych profilach w mediach społecznościowych.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fw-bold py-1 mt-3">Uczestnicy</h2>
+                <div class="accordion accordion-flush" role="tablist" id="accordion-3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="false" aria-controls="accordion-3 .item-1">Czy można robić zdjęcia i nagrywać podczas wydarzenia?</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-3">
+                            <div class="accordion-body">
+                                <p class="mb-0">Dozwolone jest tylko robienie zdjęć bez flesza. Nagrywanie jest zabronione, ze względu na warunki licencji TEDx. Prosimy o dyskrecję, aby nie zakłócać przebiegu konferencji i wystąpień prelegentów.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-2" aria-expanded="false" aria-controls="accordion-3 .item-2">Czy wydarzenie jest dostosowane dla osób niepełnosprawnych?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-3">
+                            <div class="accordion-body">
+                                <p class="mb-0">Tak, staramy się, aby nasze wydarzenie było dostępne dla wszystkich uczestników. Prosimy o wcześniejszy kontakt, abyśmy mogli zapewnić odpowiednie udogodnienia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-3" aria-expanded="false" aria-controls="accordion-3 .item-3">Jak zająć dobre miejsce na widowni?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-3">
+                            <div class="accordion-body">
+                                <p class="mb-0">Osobom którym zależy na zajęciu dogodnego miejsca zalecamy wcześniejsze przybycie. Możliwy jest także zakup biletu VIP który zapewnia rezerwacje najlepszego miejsca na sali teatru.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-4" aria-expanded="false" aria-controls="accordion-3 .item-4">Co da mi udział w konferencji TEDxLublin 2024?</button></h2>
+                        <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-3">
+                            <div class="accordion-body">
+                                <p class="mb-0">Udział w TEDxLublin 2024 to możliwość inspirowania się innowacyjnymi pomysłami, nawiązywania wartościowych kontaktów oraz udziału w globalnej społeczności TED. To także szansa na rozwój osobisty i zawodowy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center">
+                <h2 class="fw-bold py-1">Bilety</h2>
+                <div class="accordion accordion-flush" role="tablist" id="accordion-4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-1" aria-expanded="false" aria-controls="accordion-4 .item-1">Gdzie mogę kupić bilety?</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-4">
+                            <div class="accordion-body">
+                                <p class="mb-0">Bilety na TEDxLublin 2024 można kupić za pośrednictwem naszej strony internetowej. Sprzedaż biletów odbywa się przez platformę evenea. Prosimy o śledzenie aktualności, aby dowiedzieć się, kiedy sprzedaż zostanie otwarta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-2" aria-expanded="false" aria-controls="accordion-4 .item-2">Jakie rodzaje biletów są do wyboru?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-4">
+                            <div class="accordion-body">
+                                <p class="mb-0">Oferujemy bilety Standardowe, Early Bird oraz VIP. Szczegółowe informacje o biletach znajdziesz na naszej stronie sprzedaży biletów.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-3" aria-expanded="false" aria-controls="accordion-4 .item-3">Czy mogę zwrócić lub odsprzedać bilet?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-4">
+                            <div class="accordion-body">
+                                <p class="mb-0">Bilety nie są imienne, co daje możliwość odsprzedaży ich lub przekazania. Nie podlegają one jednak zwrotowi. W wyjątkowych przypadkach prosimy o kontakt z organizatorem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-4" aria-expanded="false" aria-controls="accordion-4 .item-4">Czy dostępne są bilety ulgowe?</button></h2>
+                        <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-4">
+                            <div class="accordion-body">
+                                <p class="mb-0">Nie, bilety na tegoroczną edycję TEDxLublin nie podlegają żadnym ulgom.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-4 .item-5" aria-expanded="false" aria-controls="accordion-4 .item-5">Czy jest możliwość otrzymania faktury VAT za bilet?</button></h2>
+                        <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-4">
+                            <div class="accordion-body">
+                                <p class="mb-0">Aby uzyskać fakturę za zakup biletu, należy wypełnić dane do faktury w odpowiednim polu, w ostatnim kroku składania zamówienia (przed zapłatą za zamówienie). Faktura generowana jest w formie elektronicznej i wysłana w wiadomości mailowej razem z biletem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fw-bold py-1 mt-3">Współpraca</h2>
+                <div class="accordion accordion-flush" role="tablist" id="accordion-5">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-1" aria-expanded="false" aria-controls="accordion-5 .item-1">Jak mogę zostać partnerem TEDxLublin?</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-5">
+                            <div class="accordion-body">
+                                <p class="mb-0">Aby zostać partnerem TEDxLublin, prosimy o kontakt za pośrednictwem formularza na naszej stronie. Skontaktujemy się w celu omówienia możliwości współpracy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-2" aria-expanded="false" aria-controls="accordion-5 .item-2">Czy mogę zgłosić się jako wolontariusz?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-5">
+                            <div class="accordion-body">
+                                <p class="mb-0">Tak, wolontariusze są nieocenioną częścią naszego zespołu. Aby zgłosić się jako wolontariusz, wypełnij formularz dostępny na naszej stronie.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-5 .item-3" aria-expanded="false" aria-controls="accordion-5 .item-3">W jaki sposób mogę zgłosić się jako prelegent?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-5">
+                            <div class="accordion-body">
+                                <p class="mb-0">Aby zgłosić się jako prelegent, wypełnij formularz zgłoszeniowy na naszej stronie. Skontaktujemy się z Tobą w celu omówienia szczegółów.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="fw-bold py-1 mt-3">Inne</h2>
+                <div class="accordion accordion-flush" role="tablist" id="accordion-6">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-1" aria-expanded="false" aria-controls="accordion-6 .item-1">Jak mogę skontaktować się z organizatorami?</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-6">
+                            <div class="accordion-body">
+                                <p class="mb-0">Możesz skontaktować się z nami za pośrednictwem formularza kontaktowego na naszej stronie internetowej. Możliwy jest także kontakt przez nasze profile społecznościowe. Chętnie odpowiemy na wszelkie pytania.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-2" aria-expanded="false" aria-controls="accordion-6 .item-2">Czy na miejscu wydarzenia będzie dostępny parking?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-6">
+                            <div class="accordion-body">
+                                <p class="mb-0">Przy budynku Teatru Starego nie ma miejsc parkingowych. Najbliższy parking znajduje się przy Lubelskiej Architekturze. Ten parking jest płatny. W dzień wydarzenia zalecamy skorzystanie z komunikacji miejskiej.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-3" aria-expanded="false" aria-controls="accordion-6 .item-3">Czy na miejscu będzie można kupić przekąski i napoje?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-6">
+                            <div class="accordion-body">
+                                <p class="mb-0">Nie, przewidziany jest za to poczęstunek dla uczestników wydarzenia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-4" aria-expanded="false" aria-controls="accordion-6 .item-4">Czy wydarzenie będzie dostępne w języku angielskim?</button></h2>
+                        <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-6">
+                            <div class="accordion-body">
+                                <p class="mb-0">Nie, duża większość wystąpień będzie w języku polskim. Tylko jedno wystąpienie na tegorocznej edycji TEDxLublin będzie w języku angielskim.&nbsp;Szczegóły dotyczące poszczególnych prezentacji znajdziesz w harmonogramie wydarzenia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-6 .item-5" aria-expanded="false" aria-controls="accordion-6 .item-5">Czy mogę otrzymać zaświadczenie o udziale w TEDxLublin?</button></h2>
+                        <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-6">
+                            <div class="accordion-body">
+                                <p class="mb-0">Tak, na życzenie uczestników możemy wystawić zaświadczenie o udziale w wydarzeniu. Prosimy o kontakt z organizatorami po zakończeniu konferencji.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container" style="background: url(&quot;/assets/img/elements/accelerate_arrows_md.png&quot;) right/ contain no-repeat;">
+        <div class="row h-100">
+            <div class="col text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-md-center justify-content-xl-center py-5 col-12">
+                <div style="max-width: 350px;">
+                    <h1 class="fw-bold">Nadal szukasz odpowiedzi?</h1>
+                    <p class="my-3">Napisz do nas, a my postaramy się pomóc!</p><a class="btn btn-primary btn-lg me-2" role="button" href="{% url 'contact' lang='pl' %}">KONTAKT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     {% include 'pl/components/newsletter.html' %}
-    {% include 'pl/components/footer.html' %}
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/js/script.min.js"></script>
-    <script src="/assets/js/modals.js"></script>
-</body>
+{% endblock %}
 
-</html>
+{% block extra_js %}
+<script src="/assets/js/modals.js"></script>
+{% endblock %}
