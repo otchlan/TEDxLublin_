@@ -327,39 +327,37 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
         <div class="row px-3">
             <div class="col col-12">
                 <div class="w-100">
-                    <h2 class="fw-bold">AGENDA WYDARZENIA</h2><a href="{% url 'about' lang='pl' %}">Dostępna również w formie pliku PDF&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
-                        </svg></a>
+                    <h2 class="fw-bold">AGENDA WYDARZENIA</h2>
                 </div>
             </div>
         </div>
         <div class="accordion py-3" role="tablist" id="agendaAccordion">
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab" id="headingRegistration"><button class="accordion-button collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegistration" aria-expanded="true" aria-controls="collapseRegistration"> 13:00 - Rejestracja </button></h2>
-                <div class="accordion-collapse collapse item-1 item-1 show" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingRegistration" id="collapseRegistration">
+                <h2 class="accordion-header" role="tab" id="headingRegistration"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegistration" aria-expanded="false" aria-controls="collapseRegistration">13:00 - Rejestracja </button></h2>
+                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingRegistration" id="collapseRegistration">
                     <div class="accordion-body">
                         <p>Zachęcamy do przybycia na miejsce z wyprzedzeniem, aby bez problemów dokonać rejestracji. Na miejscu otrzymasz identyfikator oraz materiały informacyjne, które ułatwią Ci udział w wydarzeniu.</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab" id="headingInauguration"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInauguration" aria-expanded="false" aria-controls="collapseInauguration"> 13:30 - Inaguracja </button></h2>
-                <div class="accordion-collapse collapse item-2 item-2" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingInauguration" id="collapseInauguration">
+                <h2 class="accordion-header" role="tab" id="headingInauguration"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInauguration" aria-expanded="false" aria-controls="collapseInauguration">13:30 - Inauguracja </button></h2>
+                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingInauguration" id="collapseInauguration">
                     <div class="accordion-body">
                         <p>Oficjalne rozpoczęcie TEDxLublin 2024. Przywitanie uczestników, krótki wstęp na temat tegorocznego motywu przewodniego 'ACCELERATION' oraz przedstawienie głównych prelegentów.</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab" id="headingShow1"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow1" aria-expanded="false" aria-controls="collapseShow1"> 13:40 - Pokaz artystyczny | Poławiacze Pereł Improv Teatr</button></h2>
-                <div class="accordion-collapse collapse item-3 item-3" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingShow1" id="collapseShow1">
+                <h2 class="accordion-header" role="tab" id="headingShow1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow1" aria-expanded="false" aria-controls="collapseShow1">13:40 - Pokaz artystyczny | Poławiacze Pereł Improv Teatr</button></h2>
+                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingShow1" id="collapseShow1">
                     <div class="accordion-body">
                         <p>Opis wystąpienia..</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agendaAccordion .item-4" aria-expanded="false" aria-controls="agendaAccordion .item-4">14:00 - 17:50 - Sesja Prelegencka</button></h2>
+                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agendaAccordion .item-4" aria-expanded="false" aria-controls="agendaAccordion .item-4">14:00 / 15:40 - Sesja Prelegencka</button></h2>
                 <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#agendaAccordion">
                     <div class="accordion-body">
                         <div class="accordion accordion-flush" role="tablist" id="accordion-2">
@@ -387,12 +385,65 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
                                     </div>
                                 </div>
                             </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-14" aria-expanded="false" aria-controls="accordion-2 .item-14">15:15 - Magdalena Bigaj</button></h2>
+                                <div class="accordion-collapse collapse item-14" role="tabpanel" data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Opis wystąpienia..</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab" id="headingShow2"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow2" aria-expanded="false" aria-controls="collapseShow2"> 17:55 - Pokaz artystyczny | Sztukmistrz Miłosz Budka</button></h2>
+                <h2 class="accordion-header" role="tab" id="headingBreak"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreak" aria-expanded="false" aria-controls="collapseBreak">15:40 / 16:40 - Przerwa kawowa</button></h2>
+                <div class="accordion-collapse collapse item-5 item-5" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingBreak" id="collapseBreak">
+                    <div class="accordion-body">
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agendaAccordion .item-15" aria-expanded="false" aria-controls="agendaAccordion .item-15">16:40 / 17:55 - Sesja Prelegencka</button></h2>
+                <div class="accordion-collapse collapse item-15" role="tabpanel" data-bs-parent="#agendaAccordion">
+                    <div class="accordion-body">
+                        <div class="accordion accordion-flush" role="tablist" id="accordion-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="false" aria-controls="accordion-3 .item-1">16:40 - Robert Pranagal</button></h2>
+                                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-3">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Opis wystąpienia..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-2" aria-expanded="false" aria-controls="accordion-3 .item-2">17:05 - Daniel Janik</button></h2>
+                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-3">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Opis wystąpienia..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-3" aria-expanded="false" aria-controls="accordion-3 .item-3">17:30 - Andrzej Choroch</button></h2>
+                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-3">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Opis wystąpienia..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" role="tab" id="headingShow2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow2" aria-expanded="false" aria-controls="collapseShow2">17:55 - Pokaz artystyczny | Sztukmistrz Miłosz Budka</button></h2>
                 <div class="accordion-collapse collapse item-5 item-5" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingShow2" id="collapseShow2">
                     <div class="accordion-body">
                         <p>Opis wystąpienia..</p>
@@ -400,7 +451,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agendaAccordion .item-6" aria-expanded="false" aria-controls="agendaAccordion .item-6">18:10 - 19:20 - Sesja Prelegencka</button></h2>
+                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agendaAccordion .item-6" aria-expanded="false" aria-controls="agendaAccordion .item-6">18:10 / 19:25 - Sesja Prelegencka</button></h2>
                 <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#agendaAccordion">
                     <div class="accordion-body">
                         <div class="accordion accordion-flush" role="tablist" id="accordion-1">
@@ -421,7 +472,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">19:40 - Dorota Filipiuk</button></h2>
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">19:00 - Dorota Filipiuk</button></h2>
                                 <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
                                     <div class="accordion-body">
                                         <p class="mb-0">Opis wystąpienia..</p>
@@ -432,22 +483,41 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
                     </div>
                 </div>
             </div>
+
+
+
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab" id="headingClosing"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClosing" aria-expanded="false" aria-controls="collapseClosing"> 19:25 - Ceremonia zakończenia</button></h2>
-                <div class="accordion-collapse collapse item-7 item-6" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingClosing" id="collapseClosing">
+                <h2 class="accordion-header" role="tab" id="headingAfter"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShow3" aria-expanded="false" aria-controls="collapseShow3">19:25 - Ceremonia zakończenia</button></h2>
+                <div class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingcollapseShow3" id="collapseShow3">
                     <div class="accordion-body">
                         <p>Podsumowanie wydarzenia i pożegnanie uczestników. Czas na refleksję nad usłyszanymi ideami oraz zapowiedź planów na przyszłość TEDxLublin.</p>
                     </div>
                 </div>
             </div>
+
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab" id="headingAfter"><button class="accordion-button collapsed collapsed collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfter" aria-expanded="false" aria-controls="collapseAfter"> 21:00 - Afterparty</button></h2>
-                <div class="accordion-collapse collapse item-8 item-7" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingAfter" id="collapseAfter">
+                <h2 class="accordion-header" role="tab" id="headingAfter"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClosing" aria-expanded="false" aria-controls="collapseClosing">19:40 - Koncert muzyczny | Justyna Zanko Violinist</button></h2>
+                <div class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingcollapseClosing" id="collapseClosing">
+                    <div class="accordion-body">
+                        <p>Opis wystąpienia..</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" role="tab" id="headingAfter"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfter" aria-expanded="false" aria-controls="collapseAfter">21:00 - Afterparty</button></h2>
+                <div class="accordion-collapse collapse" role="tabpanel" data-bs-parent="#agendaAccordion" aria-labelledby="headingAfter" id="collapseAfter">
                     <div class="accordion-body">
                         <p>Nieformalne spotkanie, które pozwoli na swobodną wymianę myśli z innymi uczestnikami i prelegentami. Doskonała okazja do networkingu oraz dyskusji w luźnej atmosferze.</p>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
         </div>
     </div>
 </section>
