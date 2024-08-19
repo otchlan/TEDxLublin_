@@ -76,7 +76,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
         </div>
     </div>
 </section>
-<section class="bg-light shadow-lg py-3">
+<section class="bg-light shadow-lg py-3" id="info">
     <div class="container">
         <div class="row px-3 pt-3">
             <div class="col">
@@ -171,7 +171,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
     </div>
     <hr class="mx-auto w-50 py-2 border-dark-subtle">
 </section>
-<section class="bg-light py-3">
+<section class="bg-light py-3" id="speakers">
     <div class="container">
         <div class="row px-3">
             <div class="col col-12">
@@ -322,7 +322,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
     </div>
     <hr class="mx-auto w-50 my-4 border-dark-subtle">
 </section>
-<section class="bg-light py-3 justify-content-center">
+<section class="bg-light py-3 justify-content-center" id="agenda">
     <div class="container">
         <div class="row px-3">
             <div class="col col-12">
@@ -521,19 +521,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
         </div>
     </div>
 </section>
-<section class="p-3 py-xl-5 bg-light">
-    <div class="container">
-        <div class="row px-3">
-            <div class="col col-12">
-                <div class="w-100">
-                    <h2 class="fw-bold">BILETY</h2>
-                    <p>Sprzedaż biletów odbywa się za pośrednictwem platformy <a href="https://app.evenea.pl/event/tedxlublin2024/" target="_blank">evenea</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container bg-white rounded shadow-sm"><iframe id="ticket-iframe" src="{% url 'tickets_iframe'%}" width="100%" scrolling="no" class="rounded" frameborder="0"></iframe></div>
-</section>
+{% include 'pl/components/tickets.html' %}
 {% include 'pl/components/partners.html' %}
 <section class="py-4 py-xl-5 bg-light shadow-lg">
     <div class="container h-100">
@@ -547,7 +535,7 @@ Wydarzenie | TEDxLublin 2024: ACCELERATION
         </div>
     </div>
 </section>
-<section>
+<section id="watch">
     <div class="container text-white py-4 py-xl-5 display-shadow">
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">

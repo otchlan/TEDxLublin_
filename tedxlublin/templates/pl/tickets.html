@@ -50,19 +50,7 @@ Bilety | TEDxLublin 2024: ACCELERATION
     </div>
     <div class="pb-5 d-flex justify-content-center"><img id="index-event-img"></div>
 </section>
-<section class="p-3 py-xl-5 bg-light">
-    <div class="container">
-        <div class="row px-3">
-            <div class="col col-12">
-                <div class="w-100">
-                    <h2 class="fw-bold">BILETY</h2><p>Sprzedaż biletów odbywa się za pośrednictwem platformy <a href="https://app.evenea.pl/event/tedxlublin2024/" target="_blank">evenea</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container bg-white rounded shadow-sm"><iframe id="ticket-iframe" src="{% url 'tickets_iframe'%}" width="100%" scrolling="no" class="rounded" frameborder="0"></iframe></div>
-</section>
-
+{% include 'pl/components/tickets.html' %}
 {% include 'pl/components/partners.html' %}
 
 <section class="bg-light">
